@@ -1,0 +1,197 @@
+/*DEFINICION DE VARIABLES-------------*/
+
+:root{
+    --ff-primary: 'Montserrat Alternates', sans-serif;
+    --ff-secundary: 'Lobster', cursive;
+    --ff--base:'Orbitron', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light:#ffff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs:rgba(0,118,192, 0.781);
+}
+
+/*Navbar*/
+nav a{
+    font-family: var(--ff--base);
+}
+
+.fab{
+    color: fuchsia;
+}
+/*PORTADA*/
+.portada{
+  
+    text-align: center;
+    font-family: var(--ff--base);
+    color: white; 
+    background-color:black;
+    height: 60vh;
+    margin-top: 10px;
+    padding: 70px;
+    
+}
+
+.portada h1{
+    font-size: 80px;
+}
+
+.portada span{
+    font-size: 40px;
+    color: fuchsia;
+}
+.presentation img{
+    width: 200px;    
+    border-radius: 50%;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+}
+
+/*Presentation*/
+.presentation p{
+    font-family:var(--ff-primary);
+    font-size: large;
+}
+
+.presentation{    
+    margin-top: 50px;
+    text-align: center;  
+}
+
+.presentation h1{
+    font-family: var(--ff-primary);
+}
+
+.work h1{
+    font-family: var(--ff-primary);
+    text-align: center;
+    
+}
+
+.work{
+    
+    margin-top: 10px;
+    padding: 40px;
+}
+
+.btn-color{
+    border-color: fuchsia;
+    
+}
+
+/*google*/
+
+* {
+    box-sizing: border-box;
+  }
+.header {
+    text-align: center;    
+    color: mintcream;    
+   }
+   
+ 
+body {margin:0;}
+ 
+ #navbar {
+   list-style-type: none;
+   margin: 0;
+   padding-top: 50px;
+   overflow: hidden;
+   background-color: #333;
+   position: fixed;
+   top: 0;
+   width: 25%;
+   float: left;
+   height: 100vh;
+    
+   
+ } 
+ code { 
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+ main header{
+     background-color: midnightblue;
+     color: mintcream;
+     padding: 20px;
+     text-align: center;
+     font-size: 30px;    
+ }
+  
+ p{
+     font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ ul{
+     font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+  #navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   margin-top: 30px;
+   text-decoration: none;
+   font-size: 25px;
+ }
+ 
+ #home{
+     color: mintcream;
+     font-size: 30px;
+     text-align: center;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     
+ }
+ section{
+  padding-left: 5px;
+  
+ }
+
+ @media screen and (max-width:700px){
+	.header{
+	  width: 100%;
+	}
+   .main-section{
+   	  width: 100%
+   }
+
+   #navbar a{
+    font-size: 20px;
+}
+   
+}
+
+@media screen and (max-width:450px){
+	h1{
+		font-size: 22px;
+    }
+    
+    #navbar a{
+        font-size: 15px;
+    }
+	.header{
+		width: 100%;
+	}
+   .main-section{
+   	  width: 100%
+   }
+   
+   
+}
+
+  
+ #main-doc {
+    width: 75%;
+    float: right;
+   
+  }
