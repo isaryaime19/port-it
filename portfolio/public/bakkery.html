@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="challeng.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+   body {margin:0;}
+/*Header*/         
+.header {
+   text-align: center;    
+   background-color: lightcoral;
+   padding-bottom: 30px;
+  }
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;  
+}
+
+li a:hover:not(.active) {
+  background-color:lightcoral;
+}
+
+.active {
+  background-color:darkslategrey;
+}
+  
+.header h1{
+    padding-top: 30px;  
+    font-family:'Indie Flower', cursive;
+    font-size: 50px;
+   }
+
+#header-img{
+       width: 300px;
+       border-radius: 50%;
+   }
+
+.btn{
+  cursor: pointer;		
+}
+
+h1, h3, h2{
+  font-family:'Indie Flower', cursive;
+}
+
+/*section 1*/
+.prod{
+  text-align: center;
+  font-family:'Indie Flower', cursive;
+}
+.contenedor-imagenes{
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justify-content: space-around;
+	border-radius:3px;
+}   
+
+.imagen img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,118,192, 0.781);
+	width: 100%;
+	height: 0;
+	transition: .5s esay;
+	overflow: hidden;
+}
+
+.overlay h2{
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery{
+	font-family: 'open sans';	
+}
+
+.gallery h1{
+	text-align: center;
+	font-weight: 300;	
+}
+
+/*Section 2*/
+
+.orden form{
+  font-size: 15px;
+  padding: 40px;
+  width: 100%;
+	border-radius: 10px;
+	background: lightcoral;
+	padding: 20px;    
+}
+.datos input{
+  padding: 7px;
+  width: 100%;
+}
+
+/*contact*/
+.form1{
+	width: 100%;
+	border-radius: 10px;
+	padding: 20px; 
+    
+}
+.form1 input{
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	font-size: 15px;
+  }
+
+  textarea{
+	width: 100%;
+	box-sizing: border-box; 
+	font-size: 15px;
+  }
+  /*Media query*/
+
+@media screen and (max-width:700px){
+	h1{
+		font-size: 22px;
+	}
+	.contenedor-imagenes{
+		width: 100%;
+	}
+   .contenedor-imagenes .imagen{
+   	  width: 30%
+   }
+   form{
+	   width: 100%;
+   }
+   input{
+	   width: 100%;
+   }
+   .header{
+	   width:100%;
+     margin-top: 50px;
+   }
+   textarea{
+	   width: 100%;
+   }
+   .social a{
+       display: inline;
+   }
+   
+   .cant legend{font-size: 15px;}
+
+   }
+
+</style>
+</head>
+<body> 
+<header id="home"><!--Header-->
+    <div class="header" id="header">   
+      <ul id="nav-bar">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>                   
+        <li><a href="#products" class="nav-link">Products</a></li>  
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div style="padding-top: 30px;">
+        <h1>Sweet and Salty</h1>
+      </div>   
+      
+        <div contenedor-imagenes>
+            <img src="https://image.freepik.com/vector-gratis/dulces-deliciosos_23-2147511804.jpg" alt="logo" id="header-img" class="img-fluid">
+        </div>           
+    </div>    
+</header><!--Header-->
+<br>
+
+<div class="container"><!--section 1-->
+    <h1 class="text-center">Products</h1>  
+  <div class="row">
+	<div class="col-md-4 imagen">		
+		  <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/6c/2f/e8/assorted-donuts.jpg" alt="Donuts" class="img-fluid">
+		  <div class="overlay">
+		  	<a href="#"><h2>Donuts</h2></a>
+      </div>
+      <div class="prod">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repudiandae sed architecto aliquid amet excepturi.</p>
+      </div>
+		</div>
+		<div class="col-md-4 imagen">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqIWHlqb5APs84hs7UKvElfRFz7ZneNtzzz2YmrNsLGerxSbcD&usqp=CAU" alt="Bread" class="img-fluid">
+		  <div class="overlay">
+		  	<a href="#"><h2>Bread</h2></a>
+      </div>
+      <div class="prod">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repudiandae sed architecto aliquid amet excepturi.</p>
+      </div>
+		</div>
+		<div class="col-md-4 imagen">
+		  <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DrEWL7AIN" alt="Cakes" class="img-fluid">
+		  <div class="overlay">
+		  	<a href="#"><h2>Cakes</h2></a>
+      </div>
+      <div class="prod">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repudiandae sed architecto aliquid amet excepturi.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<br>
+<div class="container orden mt-5 pt-5"><!--section 2-->
+  <h3 style="text-align: center;">Place your order</h3>
+    <form id="survey-form">
+      <div class="datos">
+      <input type="text" id="name" placeholder="Name" required><br><br>      
+      <input type="email" id="email" placeholder="Email" required><br><br>  
+      <input type="telephone" id="number" placeholder="Telephone" min="5" max="10" required><br><br>
+      </div>
+      <div class="row p-2">
+        <div class="col-4 cant">
+          <fieldset>
+            <legend>Products:</legend>
+             <label for="cakes">
+              <input type="checkbox" name="cakes" id="cakes" value="warr">
+            Cakes</label><br>
+            
+            <label for="Donuts">
+              <input type="checkbox" name="Donuts" id="donuts" value="ret">
+            Donuts</label><br>
+            
+             <label for="Bread">
+              <input type="checkbox" name="bread" value="tech">
+            Bread</label><br>
+            </fieldset>
+        </div>
+        <div class="col-4 cant">
+          <fieldset>
+            <legend>Quantity:</legend>
+            <input type="text" placeholder="Quantity"><br>
+            <input type="text" placeholder="Quantity"><br>
+            <input type="text" placeholder="Quantity"><br>
+          </fieldset>           
+        </div>
+        <div class="col-4 cant">
+          <fieldset>
+            <legend>Allergy:</legend>
+             <label for="warranty">
+              <input type="checkbox" name="warranty" id="warramty" value="warr">
+            Gluten free</label><br>
+            
+            <label for="return">
+              <input type="checkbox" name="return" id="return" value="ret">
+            Lactose free</label><br>
+            
+             <label for="nuts">
+              <input type="checkbox" name="nuts" value="nuts">
+            Nuts free</label><br>
+            </fieldset>
+        </div>
+      </div>    
+     <br>      
+      <label for="coments">Order Especifications:</label>
+      <textarea id="coments" name="coments" rows="10" columns="30" placeholder="Order Especifications"></textarea>
+      <br>
+       <label for="device">How did you find us?:</label>
+     <select id="dropdown" name="device">
+       <option value="Google">Google</option>
+       <option value="Facebook">Facebook</option>
+       <option value="Other">Other</option>
+      </select> 
+      <input type="button" value="Submit" id="submit" class="btn btn-primary">   
+    </form>      
+</div>
+
+<br>
+<div class="container about mt-5 mb-5 text-center"><!--About us-->
+  <h1>About Us</h1> 
+    <div>
+      <img src="https://images.pexels.com/photos/3983699/pexels-photo-3983699.jpeg?cs=srgb&dl=comida-mujer-nina-chef-3983699.jpg&fm=jpg" alt="" class="img-fluid">
+    </div>
+        <p style="font-size: 20px;font-family: 'Indie Flower', cursive;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias unde quisquam architecto nam ipsam doloribus vero id delectus, excepturi veritatis explicabo aliquam? Culpa minima quas incidunt aspernatur iusto molestias dolorum!</p>
+</div>
+</div>
+<!--contact-->
+<h1 style="text-align: center;" id="contact">Do you have any question?</h1>
+<div class="container">
+  <img src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-fluid" style="opacity: 0.5;">
+  <div class="container text-center form1" id="form">
+        <form action="" enctype="">
+          <input type="text" name="name" id="name" placeholder="Name" required><br>
+          <input type="email" name="email" id="email" placeholder="Email" required><br><br>  
+          <textarea name="message" id="message" placeholder="Message"cols="10" rows="5"></textarea><br><br>
+          <button class="btn btn-primary"  type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+<!--footer-->
+<footer style="padding: 10px;text-align: center;">      
+     
+          <p> <i class="fas fa-map-marker-alt"></i> Noord Brabant</p>  
+          <p><i class="fas fa-phone-alt"></i> Telephone: +1800-00-00</p>
+           <p><i class="fas fa-at"></i> Email: info@sweetandsalty.com</p>
+         <div class="social"> 
+            <a><i class="fab fa-facebook fa-2x"></i></a>
+            <a><i class="fab fa-instagram-square fa-2x"></i></a>               
+            <a><i class="fab fa-twitter-square fa-2x"></i></a>          
+         </div>
+</footer>
+</body>
+</html>

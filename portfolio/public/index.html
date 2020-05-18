@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+    <title>Isary Taveras Web</title>
+    <style>
+      /*DEFINICION DE VARIABLES-------------*/
+
+:root{
+    --ff-primary: 'Montserrat Alternates', sans-serif;
+    --ff-secundary: 'Lobster', cursive;
+    --ff--base:'Orbitron', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light:#ffff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs:rgba(0,118,192, 0.781);
+}
+body{
+  background: url("img/port.jpg") no-repeat fixed top;
+}
+/*Navbar*/
+nav a{
+    font-family: var(--ff--base);
+}
+
+.fab{
+    color: fuchsia;
+}
+/*PORTADA*/
+.portada{
+  
+    text-align: center;
+    font-family: var(--ff--base);
+    color: white; 
+    height: 40vh;
+    margin-top: 10px;
+    padding: 70px;
+    
+}
+
+.portada h1{
+    font-size: 60px;
+}
+
+.portada span{
+   font-size: 30px;
+    color: fuchsia;
+}
+.presentation img{
+    width: 200px;    
+    border-radius: 50%;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+}
+
+/*Presentation*/
+.presentation p{
+    font-family:var(--ff-primary);
+    font-size: large;
+}
+
+.presentation{    
+    margin-top: 10px;
+    text-align: center;  
+}
+
+.presentation h1{
+    font-family: var(--ff-primary);
+}
+
+.work h1{
+    font-family: var(--ff-primary);
+    text-align: center;
+    
+}
+.work img{object-fit: cover;}
+.work{    
+    margin-top: 10px;
+    padding: 40px;
+    
+}
+
+.card{ border-radius: 10%;}
+.btn-color{
+    border-color: fuchsia;
+    
+}
+
+#skills h1{
+    font-family: var(--ff-primary);
+    text-align: center;
+    padding: 5px;  
+}
+
+
+      .portada h1{
+        animation-name: grow;
+        animation-duration: 2s;
+        animation-delay: 1s;
+      }
+      @keyframes grow {
+        0%   {font-size: 10px;}
+        100% {font-size: 60px;}
+      }
+      .portada span{
+        animation-name: grow-s;
+        animation-duration: 2s;
+        animation-delay: 1s;
+      }
+      @keyframes grow-s {
+        0%   {font-size: 5px;}
+        100% {font-size: 30px;}
+      }
+      @media screen and (max-width:700px){
+       
+         .portada h1{
+           font-size: 40px;
+         } 
+        
+        }
+    </style>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid fixed-top" style="background-color: black;" id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#me">About me</a>
+              </li>                               
+              <li class="nav-item">
+                <a class="nav-link" href="#work">My work</a>
+              </li>                           
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>          
+                           
+             </ul>                  
+              <a class="nav-link" href="https://github.com/isaryaime19" tabindex="-1"><i class="fab fa-github-square fa-2x"></i></a>
+              <a class="nav-link" href="https://www.freecodecamp.org/isaryaime" tabindex="-1"><i class="fab fa-free-code-camp fa-2x"></i></a>               
+              <a class="nav-link" href="https://www.linkedin.com/in/isary-taveras-2a0a0ba9/" tabindex="-1"><i class="fab fa-linkedin fa-2x"></i></a>          
+                
+          </div>
+        </nav>
+      </div>
+      <br>
+      <br>
+      <!---Portada-->
+      <div class="container-fluid portada">          
+          <h1>Isary Taveras</h1>
+          <span>Front End Developer</span>         
+      </div>
+     
+    <!--Presentacion-->
+    <div class=" container presentation" id="me">
+          <div class="row">
+        <div class="col-md-3">
+          <img src="img/isaa.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-9">
+          <h1>Who I am</h1>
+          <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see, ... I offer a platform friendly and that add value to the people."</p>
+        </div>
+      </div>
+     
+    </div>
+      <!--Section 1-->
+      <div class="container-fluid work" id="work">
+        <h1>My Work</h1>
+        <div class="row">
+           <div class="col-12 col-sm-6 col-md-4 mt-5" >
+            <div class="card">
+             <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/milo-t.png" class="card-img-top img-fluid" alt="..." ></a>              
+              <div class="card-body">
+                <h5 class="card-title">Milagros Blog</h5>
+                <p class="card-text">Bootstrap, HTML5, CSS3.</p>
+                <a href="http://milo.weavewigsbraids.com/" class="btn btn-color" >Go there...</a>
+              </div>            
+            </div>
+           </div>
+  
+           <div class="col-12 col-sm-6 col-md-4 mt-5">
+            <div class="card">
+              <a href="http://isa.weavewigsbraids.com/" target="_blank"> <img src="img/isawb-t.png" class="card-img-top img-fluid" alt="..." ></a>                 
+                <div class="card-body">
+                  <h5 class="card-title">Isa Weave Braids</h5>
+                  <p class="card-text">Bootstrap, HTML5, CSS3, JavaScript</p>
+                  <a href="http://isa.weavewigsbraids.com/" class="btn btn-color " >Go there..</a>
+                </div>
+            </div>
+            
+           </div>  
+                  
+            <div class="col-12 col-sm-12 col-md-4 mt-5">
+              <div class="card">
+                <a href="techno.html" target="_blank"><img src="img/tm-t.png" class="card-img-top img-fluid" alt="..." ></a>                
+                <div class="card-body">
+                  <h5 class="card-title">TECHNOLOGY MAGAZINE</h5>
+                  <p class="card-text">Bootstrap, HTML5, CSS3, MEGAMENU.</p>
+                  <a href="techno.html" class="btn btn-color">Go there...</a>
+                </div>              
+              </div>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mt-5" >
+              <div class="card">
+                <a href="https://weavewigsbraids.com/" target="_blank"><img src="img/shop.png" class="card-img-top img-fluid" alt="..." ></a>                
+                <div class="card-body">
+                  <h5 class="card-title">Real Queen Hair</h5>
+                  <p class="card-text">Webshop, WordPress and Elementor.</p>
+                  <a href="https://weavewigsbraids.com/" class="btn btn-color" >Go there...</a>
+                </div>            
+              </div>
+             </div>
+    
+             <div class="col-12 col-sm-6 col-md-4 mt-5">
+              <div class="card">
+                <a href="bakkery.html" target="_blank"> <img src="img/bakery.png" class="card-img-top img-fluid" alt="..." ></a>                   
+                  <div class="card-body">
+                    <h5 class="card-title">Sweet and Salty</h5>
+                    <p class="card-text">Bootstrap, HTML5, CSS3.</p>
+                    <a href="bakkery.html" class="btn btn-color " >Go there..</a>
+                  </div>
+              </div>
+              
+             </div>  
+                    
+              <div class="col-12 col-sm-12 col-md-4 mt-5">
+                <div class="card">
+                  <a href="gallery.html" target="_blank"><img src="img/Julian Beltran.png" class="card-img-top img-fluid" alt="..." ></a>                 
+                  <div class="card-body">
+                    <h5 class="card-title">Photographer Portofolio</h5>
+                    <p class="card-text">Bootstrap, HTML5, CSS3, JavaScript</p>
+                    <a href="gallery.html" class="btn btn-color">Go there...</a>
+                  </div>              
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mt-5" >
+              <div class="card">
+                <a href="mmzen.html" target="_blank"><img src="img/MMZen.png" class="card-img-top img-fluid" alt="..." ></a>                
+                <div class="card-body">
+                  <h5 class="card-title">MMZen</h5>
+                  <p class="card-text">Bootstrap, CSS3, HTML5.</p>
+                  <a href="mmzen.html" class="btn btn-color" >Go there...</a>
+                </div>            
+              </div>
+             </div>
+    
+             <div class="col-12 col-sm-6 col-md-4 mt-5">
+              <div class="card">
+                <a href="agape.html" target="_blank"> <img src="img/agape.png" class="card-img-top img-fluid" alt="..." ></a>                   
+                  <div class="card-body">
+                    <h5 class="card-title">Agape</h5>
+                    <p class="card-text">Bootstrap, HTML5, CSS3.</p>
+                    <a href="agape.html" class="btn btn-color " >Go there..</a>
+                  </div>
+              </div>              
+             </div>  
+                    
+              <div class="col-12 col-sm-12 col-md-4 mt-5">
+                <div class="card">
+                  <a href="inftec.html" target="_blank"><img src="img/Document.png" class="card-img-top img-fluid" alt="..." ></a>                 
+                  <div class="card-body">
+                    <h5 class="card-title">Technical Document</h5>
+                    <p class="card-text">HTML5 and CSS3</p>
+                    <a href="inftec.html" class="btn btn-color">Go there...</a>
+                  </div>              
+                </div>
+              </div>
+          </div>
+      </div> <!--seccion 1 end-->
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <img src="img/LOGO.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+               <img src="img/logo-1.png" alt="" class="img-fluid">
+             </div>
+             <div class="col-md-4">
+               <img src="img/mmz.png" alt="" class="img-fluid">
+             </div>
+        </div>   
+    </div>
+   
+
+    <div class="container" id="skills">
+      <h1>My Skills</h1>
+      <div class="row">
+          <div class="col-md-4">
+            <h3>Front End</h3>
+            <ul>
+              <li>Bootstrap</li>
+              <li>WordPress</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>SCSS</li>
+              <li>HTML5</li>
+              <li>ES6</li>
+              <li>CSS3</li>              
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Back End</h3>
+            <ul>
+              <li>Laravel</li>
+              <li>Mysqli</li>
+              <li>PhpAdmin</li>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>Mysql</li>
+            </ul>
+           </div>
+           <div class="col-md-4">
+             <h3>Languages</h3>
+             <ul>
+               <li>Spanish(Native)</li>
+               <li>Dutch(Advanced)</li>
+               <li>English(Average)</li>
+             </ul>
+           </div>
+      </div>
+ 
+  </div>
+    
+      
+
+      <footer style="margin-top: 30px;">
+        
+      <div class="container-fluid text-center text-white" style="background-color: black;">
+        <div class="text-center">
+          <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+            <i class="fas fab fa-angle-up fa-4x"></i>
+          </a>
+        </div> 
+        <div class="row"> 
+          <div class="col-md-6">
+            <i class="fas fab fa-atom fa-7x fa-spin"></i>
+          </div>
+      
+           <div class="col-md-6 lead">
+            <p> <i class="fas fa-map-marker-alt"></i> Eindhoven</p>  
+            <p><i class="fas fa-phone-alt"></i> Telephone: +31-649-729603</p>
+             <p><i class="fas fa-at"></i> Email: isaryaime19@gmail.com</p>
+            </div>       
+             
+          </div>   
+       
+      </div>
+      </footer>
+      
+      <script>
+        $(document).ready(function(){
+          // Initialize Tooltip
+          $('[data-toggle="tooltip"]').tooltip(); 
+          
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+        
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+              /* $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){*/
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              
+            } // End if
+          });
+        });
+        </script> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
