@@ -33,110 +33,109 @@
     --fs-body: 1rem;
     --bs:rgba(0,118,192, 0.781);
 }
-body{
-  background: url("img/port.jpg") no-repeat fixed top;
-}
+
 /*Navbar*/
 nav a{
     font-family: var(--ff--base);
 }
-
+  
 .fab{
     color: fuchsia;
 }
 /*PORTADA*/
 .portada{
-  
-    text-align: center;
-    font-family: var(--ff--base);
-    color: white; 
-    height: 40vh;
-    margin-top: 10px;
-    padding: 70px;
-    
+  background: url("img/port.jpg");
+  background-position: fixed top;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: var(--ff--base);
+  height: 100vh;
+  margin-top: 10px;
+  padding-top: 150px;
+      
 }
 
-.portada h1{
-    font-size: 60px;
-}
+.portada h1{font-size: 60px;  color: white;}
 
 .portada span{
    font-size: 30px;
-    color: fuchsia;
+   color: fuchsia;
 }
+.portada span{
+ animation-name: grow-s;
+ animation-duration: 2s;
+ animation-delay: 1s;
+}
+.portada h1{
+ animation-name: grow;
+ animation-duration: 2s;
+ animation-delay: 1s;
+}
+@keyframes grow-s {
+        0%   {font-size: 5px;}
+        100% {font-size: 30px;}
+}
+@keyframes grow {
+        0%   {font-size: 10px;}
+        100% {font-size: 60px;}
+}
+/*Presentation*/
 .presentation img{
     width: 200px;    
-    border-radius: 50%;
     -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
+    filter: grayscale(90%); /* make all photos black and white */
+    transform: rotate(-20deg); 
+}
+img:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
-/*Presentation*/
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  25% { transform: translate(-1px, -2px) rotate(-1deg); }
+  50% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 .presentation p{
-    font-family:var(--ff-primary);
-    font-size: large;
+  font-family:var(--ff-primary);
+  font-size: large;
 }
+.presentation{text-align: center;}
+.presentation h1{font-family: var(--ff-primary);}
 
-.presentation{    
-    margin-top: 10px;
-    text-align: center;  
-}
-
-.presentation h1{
-    font-family: var(--ff-primary);
-}
-
+/*work*/
 .work h1{
     font-family: var(--ff-primary);
-    text-align: center;
-    
+    text-align: center;    
 }
-.work img{object-fit: cover;}
-.work{    
-    margin-top: 10px;
-    padding: 40px;
-    
-}
+.card1 img{width: 300px;}
+.card1{border-radius: 10%; background-color: transparent;}
 
-.card{ border-radius: 10%;}
-.btn-color{
-    border-color: fuchsia;
-    
+.imagen{
+  width: 300px;
+  text-align: center;  
 }
-
+/*skills*/
 #skills h1{
     font-family: var(--ff-primary);
     text-align: center;
     padding: 5px;  
 }
-
-
-      .portada h1{
-        animation-name: grow;
-        animation-duration: 2s;
-        animation-delay: 1s;
-      }
-      @keyframes grow {
-        0%   {font-size: 10px;}
-        100% {font-size: 60px;}
-      }
-      .portada span{
-        animation-name: grow-s;
-        animation-duration: 2s;
-        animation-delay: 1s;
-      }
-      @keyframes grow-s {
-        0%   {font-size: 5px;}
-        100% {font-size: 30px;}
-      }
-      @media screen and (max-width:700px){
-       
-         .portada h1{
-           font-size: 40px;
-         } 
-        
-        }
-    </style>
+#skills li{list-style: none;}
+/*media query*/
+@media screen and (max-width:700px){
+  .portada{height: 50vh;}
+  .portada h1{font-size: 40px;}
+  .imagen{width:50%;} 
+  .cont h2{font-size: 30px;}
+  }
+  .line{border-bottom: fuchsia solid 5px;}
+  .cont p{font-size: 20px;}
+  .follow a{display:inline;}
+  
+  </style>
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid fixed-top" style="background-color: black;" id="menu">
@@ -174,131 +173,101 @@ nav a{
       <!---Portada-->
       <div class="container-fluid portada">          
           <h1>Isary Taveras</h1>
-          <span>Front End Developer</span>         
+          <span>Front End Developer</span> 
+          <br>
+          <a class="btn btn-outline-light  btn-lg my-3" href="#work">PORTFOLIO</a>        
       </div>
      
     <!--Presentacion-->
-    <div class=" container presentation" id="me">
-          <div class="row">
+    <div class="container text-center mt-5 line">
+        <img src="img/me.png" alt="" class="img-fluid imagen">
+    </div>
+    <div class="container presentation" id="me">
+      <div class="row">
         <div class="col-md-3">
           <img src="img/isaa.jpg" alt="" class="img-fluid">
         </div>
         <div class="col-md-9">
-          <h1>Who I am</h1>
           <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see, ... I offer a platform friendly and that add value to the people."</p>
         </div>
       </div>
      
     </div>
       <!--Section 1-->
-      <div class="container-fluid work" id="work">
-        <h1>My Work</h1>
+      <div class="container text-center mt-5 line">
+        <img src="img/workt.png" alt="" class="img-fluide imagen">
+      </div>
+      <div class="container work text-center" id="work">
         <div class="row">
-           <div class="col-12 col-sm-6 col-md-4 mt-5" >
-            <div class="card">
-             <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/milo-t.png" class="card-img-top img-fluid" alt="..." ></a>              
-              <div class="card-body">
-                <h5 class="card-title">Milagros Blog</h5>
-                <p class="card-text">Bootstrap, HTML5, CSS3.</p>
-                <a href="http://milo.weavewigsbraids.com/" class="btn btn-color" >Go there...</a>
-              </div>            
-            </div>
+          <div class="col-12 col-md-4 mt-5" >
+            <div class="card1">
+              <a href="https://weavewigsbraids.com/" target="_blank"><img src="img/shop.png" class="img-fluid" alt="..." ></a>              
            </div>
-  
-           <div class="col-12 col-sm-6 col-md-4 mt-5">
-            <div class="card">
-              <a href="http://isa.weavewigsbraids.com/" target="_blank"> <img src="img/isawb-t.png" class="card-img-top img-fluid" alt="..." ></a>                 
-                <div class="card-body">
-                  <h5 class="card-title">Isa Weave Braids</h5>
-                  <p class="card-text">Bootstrap, HTML5, CSS3, JavaScript</p>
-                  <a href="http://isa.weavewigsbraids.com/" class="btn btn-color " >Go there..</a>
-                </div>
+           </div>
+            
+           <div class="col-12 col-md-4 mt-5">
+            <div class="card1">
+              <a href="http://isa.weavewigsbraids.com/" target="_blank"> <img src="img/isawb-t.png" class="img-fluid" alt="..." ></a>                 
+             
             </div>
             
            </div>  
+           <div class="col-12 col-md-4 mt-5">
+            <div class="card1">
+              <a href="gallery.html" target="_blank"><img src="img/Julian Beltran.png" class="img-fluid" alt="..." ></a>                 
                   
-            <div class="col-12 col-sm-12 col-md-4 mt-5">
-              <div class="card">
-                <a href="techno.html" target="_blank"><img src="img/tm-t.png" class="card-img-top img-fluid" alt="..." ></a>                
-                <div class="card-body">
-                  <h5 class="card-title">TECHNOLOGY MAGAZINE</h5>
-                  <p class="card-text">Bootstrap, HTML5, CSS3, MEGAMENU.</p>
-                  <a href="techno.html" class="btn btn-color">Go there...</a>
-                </div>              
-              </div>
             </div>
+          </div>
+
+           
           </div> 
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mt-5" >
-              <div class="card">
-                <a href="https://weavewigsbraids.com/" target="_blank"><img src="img/shop.png" class="card-img-top img-fluid" alt="..." ></a>                
-                <div class="card-body">
-                  <h5 class="card-title">Real Queen Hair</h5>
-                  <p class="card-text">Webshop, WordPress and Elementor.</p>
-                  <a href="https://weavewigsbraids.com/" class="btn btn-color" >Go there...</a>
-                </div>            
+            <div class="col-12 col-md-4 mt-5" >
+              <div class="card1">
+               <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/milo-t.png" class="img-fluid" alt="..." ></a>              
               </div>
              </div>
-    
-             <div class="col-12 col-sm-6 col-md-4 mt-5">
-              <div class="card">
-                <a href="bakkery.html" target="_blank"> <img src="img/bakery.png" class="card-img-top img-fluid" alt="..." ></a>                   
-                  <div class="card-body">
-                    <h5 class="card-title">Sweet and Salty</h5>
-                    <p class="card-text">Bootstrap, HTML5, CSS3.</p>
-                    <a href="bakkery.html" class="btn btn-color " >Go there..</a>
-                  </div>
+            
+             <div class="col-12 col-md-4 mt-5">
+              <div class="card1">
+                <a href="techno.html" target="_blank"><img src="img/tm-t.png" class="img-fluid" alt="..." ></a>               
+                
               </div>
-              
-             </div>  
+            </div>
+
+             <div class="col-12 col-md-4 mt-5">
+              <div class="card1">
+                <a href="bakkery.html" target="_blank"> <img src="img/bakery.png" class="img-fluid" alt="..." ></a>                   
+               
+              </div>
+            </div>  
                     
-              <div class="col-12 col-sm-12 col-md-4 mt-5">
-                <div class="card">
-                  <a href="gallery.html" target="_blank"><img src="img/Julian Beltran.png" class="card-img-top img-fluid" alt="..." ></a>                 
-                  <div class="card-body">
-                    <h5 class="card-title">Photographer Portofolio</h5>
-                    <p class="card-text">Bootstrap, HTML5, CSS3, JavaScript</p>
-                    <a href="gallery.html" class="btn btn-color">Go there...</a>
-                  </div>              
-                </div>
-              </div>
-          </div>
+            </div>
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mt-5" >
-              <div class="card">
-                <a href="mmzen.html" target="_blank"><img src="img/MMZen.png" class="card-img-top img-fluid" alt="..." ></a>                
-                <div class="card-body">
-                  <h5 class="card-title">MMZen</h5>
-                  <p class="card-text">Bootstrap, CSS3, HTML5.</p>
-                  <a href="mmzen.html" class="btn btn-color" >Go there...</a>
-                </div>            
+            <div class="col-12 col-md-4 mt-5" >
+              <div class="card1">
+                <a href="mmzen.html" target="_blank"><img src="img/MMZen.png" class="img-fluid" alt="..." ></a>                
+                     
               </div>
              </div>
     
-             <div class="col-12 col-sm-6 col-md-4 mt-5">
-              <div class="card">
-                <a href="agape.html" target="_blank"> <img src="img/agape.png" class="card-img-top img-fluid" alt="..." ></a>                   
-                  <div class="card-body">
-                    <h5 class="card-title">Agape</h5>
-                    <p class="card-text">Bootstrap, HTML5, CSS3.</p>
-                    <a href="agape.html" class="btn btn-color " >Go there..</a>
-                  </div>
+             <div class="col-12 col-md-4 mt-5">
+              <div class="card1">
+                <a href="agape.html" target="_blank"> <img src="img/agape.png" class="img-fluid" alt="..." ></a>                   
+                  
               </div>              
              </div>  
                     
-              <div class="col-12 col-sm-12 col-md-4 mt-5">
-                <div class="card">
-                  <a href="inftec.html" target="_blank"><img src="img/Document.png" class="card-img-top img-fluid" alt="..." ></a>                 
-                  <div class="card-body">
-                    <h5 class="card-title">Technical Document</h5>
-                    <p class="card-text">HTML5 and CSS3</p>
-                    <a href="inftec.html" class="btn btn-color">Go there...</a>
-                  </div>              
+              <div class="col-12 col-md-4 mt-5">
+                <div class="card1">
+                  <a href="inftec.html" target="_blank"><img src="img/Document.png" class="img-fluid" alt="..." ></a>                 
+                
                 </div>
               </div>
           </div>
       </div> <!--seccion 1 end-->
-      <div class="container">
+
+      <div class="container"><!--clientes-->
         <div class="row">
             <div class="col-md-4">
               <img src="img/LOGO.png" alt="" class="img-fluid">
@@ -310,72 +279,70 @@ nav a{
                <img src="img/mmz.png" alt="" class="img-fluid">
              </div>
         </div>   
-    </div>
+    </div><!--end clientes-->
    
-
-    <div class="container" id="skills">
-      <h1>My Skills</h1>
-      <div class="row">
+<div class="container text-center mb-3 line"><!--skills-->
+  <img src="img/skills.png" alt="" class="img-fluid imagen"> 
+</div>
+    <div class="container" id="skills"> 
+       <div class="row">
           <div class="col-md-4">
             <h3>Front End</h3>
             <ul>
-              <li>Bootstrap</li>
-              <li>WordPress</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>SCSS</li>
-              <li>HTML5</li>
-              <li>ES6</li>
-              <li>CSS3</li>              
+              <li><i class="fa fa-plus fab"></i> Bootstrap</li>
+              <li><i class="fa fa-plus fab"></i> WordPress</li>
+              <li><i class="fa fa-plus fab"></i> JavaScript</li>
+              <li><i class="fa fa-plus fab"></i> jQuery</li>
+              <li><i class="fa fa-plus fab"></i> SCSS</li>
+              <li><i class="fa fa-plus fab"></i> HTML5</li>
+              <li><i class="fa fa-plus fab"></i> ES6</li>
+              <li><i class="fa fa-plus fab"></i> CSS3</li>              
             </ul>
           </div>
           <div class="col-md-4">
             <h3>Back End</h3>
             <ul>
-              <li>Laravel</li>
-              <li>Mysqli</li>
-              <li>PhpAdmin</li>
-              <li>PHP</li>
-              <li>SQL</li>
-              <li>Mysql</li>
+              <li><i class="fa fa-plus fab"></i> Laravel</li>
+              <li><i class="fa fa-plus fab"></i> Mysqli</li>
+              <li><i class="fa fa-plus fab"></i> PhpAdmin</li>
+              <li><i class="fa fa-plus fab"></i> PHP</li>
+              <li><i class="fa fa-plus fab"></i> SQL</li>
+              <li><i class="fa fa-plus fab"></i> Mysql</li>
             </ul>
            </div>
            <div class="col-md-4">
              <h3>Languages</h3>
              <ul>
-               <li>Spanish(Native)</li>
-               <li>Dutch(Advanced)</li>
-               <li>English(Average)</li>
+               <li><i class="fa fa-plus fab"></i> Spanish(Native)</li>
+               <li><i class="fa fa-plus fab"></i> Dutch(Advanced)</li>
+               <li><i class="fa fa-plus fab"></i> English(Average)</li>
              </ul>
            </div>
       </div>
- 
-  </div>
+  </div><!--end skills-->
     
-      
-
-      <footer style="margin-top: 30px;">
-        
-      <div class="container-fluid text-center text-white" style="background-color: black;">
-        <div class="text-center">
-          <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
-            <i class="fas fab fa-angle-up fa-4x"></i>
-          </a>
-        </div> 
-        <div class="row"> 
-          <div class="col-md-6">
-            <i class="fas fab fa-atom fa-7x fa-spin"></i>
-          </div>
-      
-           <div class="col-md-6 lead">
-            <p> <i class="fas fa-map-marker-alt"></i> Eindhoven</p>  
-            <p><i class="fas fa-phone-alt"></i> Telephone: +31-649-729603</p>
-             <p><i class="fas fa-at"></i> Email: isaryaime19@gmail.com</p>
-            </div>       
-             
-          </div>   
-       
+  <div class="container text-center line"><!--contact-->
+    <img src="img/contact.png" alt="" class="img-fluid imagen">
+  </div>    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 cont">
+        <h2>CONTACT ME DIRECTLY</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Eindhoven</p>  
+        <p><i class="fas fa-phone-alt"></i> Telephone: +31-649-729603</p>
+         <p><i class="fas fa-at"></i> Email: isaryaime19@gmail.com</p>
+        </div>       
+      <div class="col-md-6 text-center follow">
+        <h2>FOLLOW ME</h2>
+        <a class="nav-link" href="https://github.com/isaryaime19" tabindex="-1"><i class="fab fa-github-square fa-4x"></i></a>
+              <a class="nav-link" href="https://www.freecodecamp.org/isaryaime" tabindex="-1"><i class="fab fa-free-code-camp fa-4x"></i></a>               
+              <a class="nav-link" href="https://www.linkedin.com/in/isary-taveras-2a0a0ba9/" tabindex="-1"><i class="fab fa-linkedin fa-4x"></i></a>    
       </div>
+    </div>
+  </div><!--end contact--> 
+    <!--footer-->
+      <footer style="margin-top: 30px; background-color: black; padding: 10px; color: white;">
+        <p>©2020 Isary Taveras</p>
       </footer>
       
       <script>

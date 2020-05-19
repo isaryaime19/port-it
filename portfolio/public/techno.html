@@ -10,19 +10,30 @@
 
     <title>Mega Menu</title>
     <style>
-      /*google*/
-
+ 
 * {
     box-sizing: border-box;
   }
-.header {
-    text-align: center;    
-    color: mintcream;    
-   }
-   
- 
-body {margin:0;}
- 
+body {margin:0; }
+/*Header and navbar*/
+  
+#main-doc {
+    width: 75%;
+    float: right;   
+ }
+ ul{
+     font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+  
+ #navbar a {
+   display: block;
+   color: white;
+   text-align: center;
+   margin-top: 30px;
+   text-decoration: none;
+   font-size: 25px;
+ }
  #navbar {
    list-style-type: none;
    margin: 0;
@@ -33,101 +44,69 @@ body {margin:0;}
    top: 0;
    width: 25%;
    float: left;
-   height: 100vh;
-    
-   
- } 
+height: 100vh;
+} 
  code { 
     font-family: monospace;
     font-size: 20px;
   }
 
- main header{
-     background-color: midnightblue;
-     color: mintcream;
-     padding: 20px;
-     text-align: center;
-     font-size: 30px;    
+ .header1{
+  background: url("img/gif.gif") no-repeat;
+  background-position: fixed top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: mintcream;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;         
  }
   
  p{
      font-size: 18px;
      font-family: Arial, Helvetica, sans-serif;
  }
- ul{
-     font-size: 18px;
-     font-family: Arial, Helvetica, sans-serif;
- }
-  #navbar a {
-   display: block;
-   color: white;
-   text-align: center;
-   margin-top: 30px;
-   text-decoration: none;
-   font-size: 25px;
- }
+ 
  
  #home{
      color: mintcream;
      font-size: 30px;
      text-align: center;
      padding-bottom: 20px;
-     padding-top: 20px;
-     
+     padding-top: 20px;     
  }
- section{
-  padding-left: 5px;
-  
- }
-
- @media screen and (min-width:700px){
-	.header{
-	  width: 100%;
-	}
-   .main-section{
-   	  width: 100%
-   }
-
-   #navbar a{
-    font-size: 20px;
-}
-   
-}
-
-@media screen and (max-width:450px){
-	h1{
-		font-size: 22px;
-    }
-    
-    #navbar a{
-        font-size: 15px;
-    }
-	.header{
-		width: 100%;
-	}
-   .main-section{
-   	  width: 100%
-   }
-    
+ section{padding-left: 5px;}
+ 
+/*media query*/
+@media screen and (max-width:700px){
+	.header1 p{font-size: 20px;}
+  #navbar a{font-size: 15px;}
+	.header1{width:90%;}
+  .main-section{width: 100%;} 
 }  
- #main-doc {
-    width: 75%;
-    float: right;
-   
-  }
-    .fa-facebook {
-    color:gray;
-    }
 
-    .fa-instagram-square {
-        color:gray;
-    }
-    .fa-twitter-square {
-        color:gray;
-    }
-    </style>
-  </head>
-  <body>
+  /*media iconos*/
+.fa-facebook {color:gray;}
+.fa-instagram-square {color:gray;}
+.fa-twitter-square {color:gray;}
+
+/*animation*/
+.tec:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  25% { transform: translate(-1px, -2px) rotate(-1deg); }
+  50% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+</style>
+</head>
+<body>
+  <!--navbar-->
 <div class="container-fluid fixed-top bg-light" id="menu">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
@@ -184,11 +163,11 @@ body {margin:0;}
               
         </div>
       </nav>
-    </div>
+    </div> <!--end navbar--> 
     <br>
     <br>
     <!---seccion 1-->
-    <div class="container-fluid mt-2 p-md-5 text-white text-center lead" style="background-color: midnightblue;">
+    <div class="container-fluid header1 mt-2 p-md-5 text-white text-center lead">
         <div>
             <i class="fas fa-satellite fa-6x fa-spin"></i>
         </div>
@@ -198,7 +177,7 @@ body {margin:0;}
     <br>
     <div class="container mt-5">
       <div class="row">
-         <div class="col-12 col-sm-6 col-md-4 mt-5" >
+         <div class="col-12 col-sm-6 col-md-4 mt-5 tec">
           <div class="card">
             <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
             <div class="card-body">
@@ -209,7 +188,7 @@ body {margin:0;}
           </div>
          </div>
 
-         <div class="col-12 col-sm-6 col-md-4 mt-5">
+         <div class="col-12 col-sm-6 col-md-4 mt-5 tec">
           <div class="card">
                 <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
               <div class="card-body">
@@ -221,7 +200,7 @@ body {margin:0;}
           
          </div>  
                 
-          <div class="col-12 col-sm-12 col-md-4 mt-5">
+          <div class="col-12 col-sm-12 col-md-4 mt-5 tec">
             <div class="card">
               <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
               <div class="card-body">
