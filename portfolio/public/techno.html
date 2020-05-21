@@ -11,9 +11,6 @@
     <title>Mega Menu</title>
     <style>
  
-* {
-    box-sizing: border-box;
-  }
 body {margin:0; }
 /*Header and navbar*/
   
@@ -52,24 +49,28 @@ height: 100vh;
   }
 
  .header1{
-  background: url("img/gif.gif") no-repeat;
-  background-position: fixed top;
-  background-attachment: fixed;
+  background: url("https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
   background-size: cover;
-  color: mintcream;
-  padding: 20px;
+  color:white;
+  padding-top: 100px;
   text-align: center;
-  font-size: 30px;         
+  font-size: 30px;  
+  height: 60vh; 
+   
  }
-  
- p{
-     font-size: 18px;
-     font-family: Arial, Helvetica, sans-serif;
- }
- 
- 
- #home{
-     color: mintcream;
+  .block1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: teal;
+  }
+  .block1 i, h1{
+    color:white;
+  }
+
+  .block2{
+    background-color: teal;
+  }
+  #home{
+     color:gray;
      font-size: 30px;
      text-align: center;
      padding-bottom: 20px;
@@ -82,13 +83,14 @@ height: 100vh;
 	.header1 p{font-size: 20px;}
   #navbar a{font-size: 15px;}
 	.header1{width:90%;}
-  .main-section{width: 100%;} 
+  .main-section{width: 100%;}
+  .etiqueta{visibility: hidden;} 
 }  
 
   /*media iconos*/
-.fa-facebook {color:gray;}
-.fa-instagram-square {color:gray;}
-.fa-twitter-square {color:gray;}
+.fa-facebook {color:teal;}
+.fa-instagram-square {color:teal;}
+.fa-twitter-square {color:teal;}
 
 /*animation*/
 .tec:hover{
@@ -102,7 +104,19 @@ height: 100vh;
   50% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
+.etiqueta{ 
+  height: 100px; 
+  padding: 5px; 
+  background-color:orange;
+  color:black;
+  margin-top:-80px;
+  position: relative;
+  text-align: center;  
+  }
+  .mod{
+    background: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+  background-size: cover;
+  }
 </style>
 </head>
 <body>
@@ -167,22 +181,71 @@ height: 100vh;
     <br>
     <br>
     <!---seccion 1-->
-    <div class="container-fluid header1 mt-2 p-md-5 text-white text-center lead">
-        <div>
+    <div class="container-fluid header1 mt-2 text-center">
+        <!--<div>
             <i class="fas fa-satellite fa-6x fa-spin"></i>
-        </div>
-        <p class="display-4" style="text-decoration: underline;">TECHNOLOGY MAGAZINE</p>
-        <span>Technology Lovers</span>
+        </div>-->
+        <h1 class="bg-dark">TECHNOLOGY MAGAZINE</h1>
+        
     </div>
     <br>
+    <div class="container etiqueta pt-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum, consequuntur beatae perspiciatis possimus eveniet dolore. Fuga similique rerum, eius harum esse quam debitis molestiae enim unde vitae rem impedit.</p>
+    </div>
+    <div class="container  pt-5"><!--block2-->
+      <div class="row">
+        <div class="col-md-6">
+         <img src="https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="card-img-top img-fluid" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quo.</p>              
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>    
+            <div class="col-md-4">
+              <img src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>    
+          </div>                 
+         </div>
+      </div>
+    </div><!--end block2-->  
+
+    <div class="container-fluid  p-5 block1 text-white"><!--block1-->
+      <div class="row">
+        <div class="col-md-6 text-center">
+         <h1>WHAT IS NEW?</h1>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+              <P><i class="fa fa-plus fab"></i> Lorem ipsum dolor sit amet consectetur.</P>
+        </div>
+        <div class="col-md-6 text-center">
+          <H1>MAGAZINE</H1>
+          <i class="fas fa-satellite fa-8x"></i>
+          <i class="fas fa-radiation fa-8x fa-spin" style="color: tomato;"></i>
+          <i class="fas fa-microscope fa-8x" style="color:gold;"></i>         
+        </div>
+      </div>
+    </div><!--end block1-->
+  
+   <!--block3-->
     <div class="container mt-5">
       <div class="row">
          <div class="col-12 col-sm-6 col-md-4 mt-5 tec">
           <div class="card">
-            <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+            <img src="https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt="..." >
             <div class="card-body">
-              <h5 class="card-title">Ejercicios</h5>
-              <p class="card-text">Como expertos en ofrecer tratamiento alternativo para el Parkinson, vamos a hablarle de la importancia de realizar una serie de ejercicios para Parkinson. Y es que es muy importante en este tipo de enfermedades realizar estos ejercicios de movilidad.</p>
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum cum hic quo sapiente. Repudiandae labore consectetur itaque a nesciunt cumque delectus laborum voluptatum placeat odit doloremque recusandae ad, expedita necessitatibus.</p>
               <a href="" class="btn btn-primary" >Leer mas...</a>
             </div>            
           </div>
@@ -190,10 +253,10 @@ height: 100vh;
 
          <div class="col-12 col-sm-6 col-md-4 mt-5 tec">
           <div class="card">
-                <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+                <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt="..." >
               <div class="card-body">
-                <h5 class="card-title">Alimentacion</h5>
-                <p class="card-text">Hay que tener en cuenta en los pacientes con la enfermedad de Parkinson que toman levodopa que los aminoácidos neutros y la levodopa compiten en su absorción a nivel del intestino delgado y barrera hematoencefálica.</p>
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus tempora repellat temporibus ut, perferendis quae laborum! Illum, dignissimos molestiae. Necessitatibus veritatis possimus excepturi recusandae ex magni dicta fugit sapiente natus.</p>
                 <a href="" class="btn btn-primary" >Leer mas..</a>
               </div>
           </div>
@@ -202,51 +265,21 @@ height: 100vh;
                 
           <div class="col-12 col-sm-12 col-md-4 mt-5 tec">
             <div class="card">
-              <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+              <img src="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt="..." >
               <div class="card-body">
-                <h5 class="card-title">La Respiración</h5>
-                <p class="card-text">Además de permitir una buena oxigenación y una buena fonación, la respiración puede ser una técnica muy eficaz para relajarse. Estas técnicas tienen un efecto muy comprobante sobre las personas con la enfermedad de Parkinson. La respiración relajante puede estar utilizando en varios casos; por ejemplo:</p>
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sunt. Ex deleniti accusamus architecto ducimus, dolorem quidem in. Est pariatur corrupti harum minus mollitia natus sequi facere, nesciunt aut error!</p>
                 <a href="" class="btn btn-primary">Leer mas...</a>
               </div>              
             </div>
           </div>
         </div> 
     </div>    
+    <!--end block3-->
     
-     <!--modal-->   
-    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
-          </div>
-        </div>
-      </div>
-    </div>
-     <!--modal-->
-
      <!--seccion 2-->
      <br>
-    <div class="container-fluid  p-5 mb-5" style="background-color: midnightblue;">
+    <div class="container-fluid  p-5 mb-5 mod">
         <div class="card text-center">
             <div class="card-header">
               Featured
@@ -292,21 +325,29 @@ height: 100vh;
         <i class="fas fa-angle-up fa-4x"></i>
       </a><br><br>  
     </div> 
-<div class="container-fluid text-center text-white p-5" style="background-color: midnightblue;">
-  
+<div class="container-fluid text-center text-white p-3" style="background-color:teal;">
   <div class="row"> 
-    <div class="col-md-6">
-      <i class="fas fa-atom fa-7x fa-spin"></i>
-    </div>
-
-     <div class="col-md-6 lead">
+    <div class="col-md-4">
+      <h3 style="color: orange;">CHAPTERS</h3>
+              <P> Lorem ipsum dolor</P>
+              <P> Lorem ipsum dolor</P>
+              <P> Lorem ipsum dolor</P>
+              <P> Lorem ipsum dolor</P>
+              <P> Lorem ipsum dolor</P>
+              <P> Lorem ipsum dolor</P>
+        </div>   
+        <div class="col-md-4 pt-5">
+          <i class="fas fa-trademark fa-10x" style="color: orange;"></i>
+        </div>   
+     <div class="col-md-4 lead">
+      <h1 style="color: orange;">CONTACT</h1>
       <p> <i class="fas fa-map-marker-alt"></i> Noord Brabant</p>  
       <p><i class="fas fa-phone-alt"></i> Telephone: +1800-00-00</p>
        <p><i class="fas fa-at"></i> Email: info@technology.com</p>
       </div>       
        
     </div>   
- 
+  </div>
 </div>
 </footer>
     <!-- Optional JavaScript -->
