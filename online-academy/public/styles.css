@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --ff-primary: 'Montserrat Alternates', sans-serif;
+    --ff-secundary: 'Lobster', cursive;
+    --ff--base:'Orbitron', sans-serif;
+    --bg--primary:white;
+    --bg--secundary: #003300;
+    --fc--primary:white;
+    --fc-seundary: black;
+    --fs-title:60px;
+    --fs--subtitle:30px;
+}
+.title h1{
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes grow {
+    0%   {font-size: 5px;}
+    50%{font-size: 30px;}
+    100% {font-size: 60px;}
+}
+
+header{   
+   background:url("img/portada-oa.png");
+   background-size: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed top;
+    background-position: right;
+    width: 100%;
+    height: 470px;
+    text-align:left;
+    color:var(--fc--secundary);
+    position: relative;
+}
+.logo{width: 80px;}
+.port img{width: 350px; float:right;}
+.ola{
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-right: auto;
+             
+}
+.title{ margin-left: 60px;}
+.title h1{
+    margin-top: 50px;
+    font-size: var(--fs-title);
+    font-family: var(--ff--primary);
+}
+.titles{font-family: var(--ff-primary);}
+.btn{
+    width: 150px;
+    font-size: 20px;
+}
+
+.plant img{
+    animation-name: grow-2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  
+  @keyframes grow-2 {
+    0%   {width: 5%;}
+    50%{width: 50%;}
+    100% {width: 100%;}
+}
+ /*social sidebar*/
+ .socal2 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin: 0px auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   }
+
+#socialfixed{
+    position:fixed;
+    top:75%;
+    width: 50px;
+    height: 130px;
+    background-color:rgba(15, 16, 17, 0.548);
+    z-index: 100;
+    padding-top: 15px;
+    padding-left: 10px;
+    
+    }
+    #socialfixed i{color: white;}
+
+.style{
+    background-image: url("img/s.png");
+    background-size:250px;
+    background-repeat: no-repeat;
+   }
+ 
+.green{
+    background-image: url("img/g.png");
+    background-size:250px;
+    background-repeat: no-repeat;
+}
+.about{
+    margin-top: 15px;
+}
+
+.blad img:hover{
+    animation-name: girar;
+    animation-duration: 2s;
+    }
+  
+  @keyframes girar {
+    0%   {transform: rotate(45deg);}
+    50%{transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/*footer{
+    background: url("img/diploma.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+    height: 450px;
+    color:var(--fc--secundary);
+    position: relative;
+}*/
+
+.tresd img{
+    width: 300px;
+}
+.ola2{
+    position:absolute;
+    width: 100%;
+}
+.contact{
+    position: relative;
+    padding-top: 100px;
+}
+.social{
+    padding: 5px;
+}
+
+@media screen and (max-width:400px){
+    
+    .ola{margin-top: 80px;}
+}
+
+@media screen and (min-width:450px){
+    .ola{margin-top: 110px;}
+}
+
+@media screen and (min-width:700px){
+   
+    .ola{margin-top: 60px;}
+}
+
+@media screen and (min-width:900px){
+    .ola{margin-top: 25px;}
+}

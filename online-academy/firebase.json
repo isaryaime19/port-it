@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "template2a381f",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
+
