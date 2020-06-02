@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Webdesign and Webshops development in Eindhoven">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@500&family=Orbitron&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
@@ -42,19 +43,25 @@ nav a{
 .fab{
     color: fuchsia;
 }
+.fas{ color:fuchsia;}
 /*PORTADA*/
-.portada{
+header{
   background: url("img/port.jpg");
   background-position: fixed top;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
   font-family: var(--ff--base);
-  height: 100vh;
-  margin-top: 10px;
-  padding-top: 150px;
-      
+  height: 550px;
+  margin-top: 10px;      
 }
+.isatw{
+  position: absolute;
+  display: block;
+}
+.isatw img{
+  width:400px;
+  }
 
 .portada h1{font-size: 60px;  color: white;}
 
@@ -94,8 +101,7 @@ img:hover{
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
-  25% { transform: translate(-1px, -2px) rotate(-1deg); }
-  50% { transform: translate(1px, 2px) rotate(0deg); }
+   50% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 .presentation p{
@@ -106,12 +112,18 @@ img:hover{
 .presentation h1{font-family: var(--ff-primary);}
 
 /*work*/
+.work{
+  background: url("img/port.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .work h1{
     font-family: var(--ff-primary);
     text-align: center;    
 }
-.card1 img{width: 300px;}
-.card1{border-radius: 10%; background-color: transparent;}
+
+
 
 .imagen{
   width: 300px;
@@ -124,8 +136,9 @@ img:hover{
     padding: 5px;  
 }
 #skills li{list-style: none;}
+
 /*media query*/
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
   .portada{padding-top: 100px;}
   .portada h1{font-size: 40px;}
   .imagen{width:70%;} 
@@ -135,17 +148,52 @@ img:hover{
   .line{border-bottom: fuchsia solid 5px;}
   .cont p{font-size: 20px;}
   .follow a{display:inline;}
+
+ /*social sidebar*/
+ .socal2 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+  #socialfixed {
+  position: fixed;
+  top: 75%;
+  width: 50px;
+  height: 130px;
+  background-color: rgba(15, 16, 17, 0.548);
+  z-index: 100;
+  padding-top: 15px;
+  padding-left: 10px;
+  }
+
+  #socialfixed i {
+  color: white;
+  }
   
+  .pricing p{font-size: 20px;}
+
+  span{
+    color:white;
+    background-color: fuchsia;
+    padding: 5px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
   </style>
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-       <div class="container-fluid fixed-top" style="background-color: black;" id="menu">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-          
+    <header>
+      <div class="container-fluid fixed-top" style="background-color: black;" id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        
+          </button>        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
@@ -159,7 +207,7 @@ img:hover{
               </li>                           
               <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
-              </li>          
+              </li>      
                            
              </ul>                  
               <a class="nav-link" href="https://github.com/isaryaime19" tabindex="-1"><i class="fab fa-github-square fa-2x"></i></a>
@@ -172,183 +220,255 @@ img:hover{
       <br>
       <br>
       <!---Portada-->
-      <div class="container-fluid portada">          
-          <h1>Isary Taveras</h1>
-          <span>Front End Developer</span> 
-          <br>
-          <a class="btn btn-outline-light  btn-lg my-3" href="#work">PORTFOLIO</a>        
+      <div class="container portada"> 
+        <div class=" container isatw">
+          <img src="img/isat-logo.png" alt="Webdesigner Eindhoven" class="img-fluid">
+          <a class="btn btn-outline-light  btn-lg" href="#work">PORTFOLIO</a> 
+        </div>              
       </div>
-     
-    <!--Presentacion-->
-    <div class="container text-center mt-5 line">
-        <img src="img/me.png" alt="" class="img-fluid imagen">
-    </div>
-    <div class="container presentation" id="me">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="img/isaa.jpg" alt="" class="img-fluid">
+    </header>
+       
+     <main>
+       <section>
+        <!--Presentacion-->
+        <div class="container text-center mt-5 line">
+            <img src="img/me.png" alt="Webdesigner Eindhoven" class="img-fluid imagen">
         </div>
-        <div class="col-md-9">
-          <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see, ... I offer a platform friendly and that add value to the people."</p>
+        <div class="container presentation" id="me">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="img/isaa.jpg" alt="Webdesigner Eindhoven" class="img-fluid">
+            </div>
+            <div class="col-md-9">
+              <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see, ... I offer a platform friendly and that add value to the people."</p>
+            </div>
+          </div>     
         </div>
+       </section>
+
+        <!--Section 1-->
+      <div class="container text-center mt-5 mb-3 line">
+        <img src="img/workt.png" alt="Webdesigner Eindhoven" class="img-fluide imagen">
       </div>
-     
-    </div>
-      <!--Section 1-->
-      <div class="container text-center mt-5 line">
-        <img src="img/workt.png" alt="" class="img-fluide imagen">
-      </div>
-      <div class="container work text-center" id="work">
+      <div class="container-fluid work text-center p-5" id="work">
         <div class="row">
-          <div class="col-12 col-md-4 mt-5" >
-            <div class="card1">
-              <a href="https://weavewigsbraids.com/" target="_blank"><img src="img/shop.png" class="img-fluid" alt="..." ></a>              
-           </div>
-           </div>
-            
-           <div class="col-12 col-md-4 mt-5">
-            <div class="card1">
-              <a href="http://isa.weavewigsbraids.com/" target="_blank"> <img src="img/isawb-t.png" class="img-fluid" alt="..." ></a>                 
-             
+          <div class="row">
+            <div class="col-md-6 mt-5">
+             <a href="https://isaweb.web.app/"><img src="img/green.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a> 
             </div>
-            
-           </div>  
-           <div class="col-12 col-md-4 mt-5">
-            <div class="card1">
-              <a href="gallery.html" target="_blank"><img src="img/Julian Beltran.png" class="img-fluid" alt="..." ></a>                 
-                  
+            <div class="col-md-6 mt-5">
+              <a href="https://themplate1.web.app/"><img src="img/e&a.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a>
             </div>
-          </div>           
+          </div>
+          
+          <div class="row">
+          <div class="col-md-6 mt-5">            
+              <a href="queen-donuts.html" target="_blank"> <img src="img/donuts.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                   
+          </div>                   
+          <div class="col-md-6 mt-5" >           
+             <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/breakfast.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>              
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mt-5">             
+                <a href="make-up.html" target="_blank"><img src="img/make-up.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                 
+            </div>
+           <div class="col-md-6 mt-5" >            
+              <a href="https://weavewigsbraids.com/" target="_blank"><img src="img/weavewigsbraids.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>              
+            </div>
+          </div>                
+          
+        <div class="row">        
+          <div class="col-md-6 mt-5">          
+              <a href="http://isa.weavewigsbraids.com/" target="_blank"> <img src="img/iwb.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                 
+          </div>  
+           <div class="col-md-6 mt-5">          
+              <a href="gallery.html" target="_blank"><img src="img/julian.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                 
+           </div>           
         </div> 
         
         <div class="row">
-          <div class="col-12 col-md-4 mt-5">
-            <div class="card1">
-              <a href="agape.html" target="_blank"> <img src="img/Agaphe.png" class="img-fluid" alt="..." ></a>                   
-                
-            </div>              
-           </div>  
-          
+          <div class="col-md-6 mt-5">           
+              <a href="agape.html" target="_blank"> <img src="img/agaphe.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                   
+          </div>          
             
-             <div class="col-12 col-md-4 mt-5">
-              <div class="card1">
-                <a href="techno.html" target="_blank"><img src="img/Mega.png" class="img-fluid" alt="..." ></a>               
-                
-              </div>
-            </div>
-
-           <div class="col-12 col-md-4 mt-5" >
-                <div class="card1">
-                  <a href="mmzen.html" target="_blank"><img src="img/MMZen.png" class="img-fluid" alt="..." ></a>                
-                       
-                </div>
-               </div>
-        </div>    
-            
-              
-
-             <div class="row">
-              <div class="col-12 col-md-4 mt-5">
-                <div class="card1">
-                  <a href="bakkery.html" target="_blank"> <img src="img/bakery.png" class="img-fluid" alt="..." ></a>                   
-                 
-                </div>
-              </div>  
-                      
-              <div class="col-12 col-md-4 mt-5" >
-                <div class="card1">
-                 <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/milo-t.png" class="img-fluid" alt="..." ></a>              
-                </div>
-               </div>
-            
-                    
-              <div class="col-12 col-md-4 mt-5">
-                <div class="card1">
-                  <a href="inftec.html" target="_blank"><img src="img/Document.png" class="img-fluid" alt="..." ></a>                 
-                
-                </div>
+             <div class="col-md-6 mt-5">             
+                <a href="techno.html" target="_blank"><img src="img/techno.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>               
               </div>
           </div>
-      </div> <!--seccion 1 end-->
 
-      <div class="container"><!--clientes-->
-        <div class="row">
+          <div class="row">
+            <div class="col-md-6 mt-5" >             
+                <a href="mmzen.html" target="_blank"><img src="img/mmzen.jpg" class="img-fluid" alt="Webdesigner Eindhoven"></a>                
+            </div>
+            <div class="col-md-6 mt-5">
+             <a href="https://template2a381f.web.app/"><img src="img/online-academy.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a>
+            </div>
+        </div>                                
+      </div> <!--seccion 1 end-->
+     </main>
+   
+<section>
+  <div class="container pt-5"><!--clientes-->
+    <div class="row">
+        <div class="col-md-4">
+          <img src="img/LOGO.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+           <img src="img/logo-1.png" alt="" class="img-fluid">
+         </div>
+         <div class="col-md-4">
+           <img src="img/mmz.png" alt="" class="img-fluid">
+         </div>
+    </div>   
+</div><!--end clientes-->
+</section>
+
+<section> 
+  <div class="container text-center mt-5 line">
+    <img src="img/pricing.png" alt="" class="img-fluide imagen">
+  </div>
+  <div class="container text-center line pt-5">
+    <h1>Web<span>Sites</span></h1>
+  </div>
+  <div class="container pricing mt-3">      
+     <div class="row">
+        <div class="col-md-4 card">
+        <h2>Basic <span>€100</span></h2>
+        <p><i  class="fas fa-check"></i> 7 Days Delivery.</p>
+        <p><i  class="fas fa-check"></i> 1 Page.</p>
+        <p><i  class="fas fa-check"></i> 5 Sections(Presentation, Services, About, Gallery, Contact).</p>
+        <p><i  class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> 2 Plugins(Animation Letters, WhatsApp).</p>
+        <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
+      </div>
+      <div class="col-md-4 card">
+        <h2>Standart <span>€200</span></h2>
+        <p><i class="fas fa-check"></i> 10 Days Delivery.</p>
+        <p><i  class="fas fa-check"></i> 5 Pages.</p>
+        <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
+        <p><i class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
+      </div>
+      <div class="col-md-4 card">
+        <h2>Extras</h2>
+        <p><i  class="fas fa-check"></i> Logo €10</p>
+        <p><i  class="fas fa-check"></i> Domain €15 a year</p>
+        <p><i  class="fas fa-check"></i> Hosting €60 for 2 years</p>          
+      </div>
+    </div>
+    <div class="container text-center line pt-5">
+      <h1>Web<span>Shops</span></h1>
+    </div>
+    <div class="row pt-5">
+      <div class="col-md-4 card">
+        <h2>Basic <span>€150</span></h2>
+        <p><i class="fas fa-check"></i> 15 Days Delivery.</p>
+        <p><i  class="fas fa-check"></i> 10 Products.</p>
+        <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
+        <p><i class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
+      </div>
+      <div class="col-md-4 card">
+      <h2>Standart <span>€250</span></h2>
+        <p><i class="fas fa-check"></i> 15 Days Delivery.</p>
+        <p><i  class="fas fa-check"></i> 20 Products.</p>
+        <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
+        <p><i class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
+      </div>
+      <div class="col-md-4 card">
+        <h2>Extras</h2>
+        <p><i  class="fas fa-check"></i> Logo €10</p>
+        <p><i  class="fas fa-check"></i> Domain €15 a year</p>
+        <p><i  class="fas fa-check"></i> Hosting €60 for 2 years</p>          
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ <section>
+
+  <div class="container text-center mb-3 mt-5 line"><!--skills-->
+    <img src="img/skills.png" alt="" class="img-fluid imagen"> 
+  </div>
+      <div class="container" id="skills"> 
+         <div class="row">
             <div class="col-md-4">
-              <img src="img/LOGO.png" alt="" class="img-fluid">
+              <h3>Front End</h3>
+              <ul>
+                <li><i class="fa fa-plus fab"></i> Bootstrap</li>
+                <li><i class="fa fa-plus fab"></i> WordPress</li>
+                <li><i class="fa fa-plus fab"></i> JavaScript</li>
+                <li><i class="fa fa-plus fab"></i> jQuery</li>
+                <li><i class="fa fa-plus fab"></i> SCSS</li>
+                <li><i class="fa fa-plus fab"></i> HTML5</li>
+                <li><i class="fa fa-plus fab"></i> ES6</li>
+                <li><i class="fa fa-plus fab"></i> CSS3</li>              
+              </ul>
             </div>
             <div class="col-md-4">
-               <img src="img/logo-1.png" alt="" class="img-fluid">
+              <h3>Back End</h3>
+              <ul>
+                <li><i class="fa fa-plus fab"></i> Laravel</li>
+                <li><i class="fa fa-plus fab"></i> Mysqli</li>
+                <li><i class="fa fa-plus fab"></i> PhpAdmin</li>
+                <li><i class="fa fa-plus fab"></i> PHP</li>
+                <li><i class="fa fa-plus fab"></i> SQL</li>
+                <li><i class="fa fa-plus fab"></i> Mysql</li>
+              </ul>
              </div>
              <div class="col-md-4">
-               <img src="img/mmz.png" alt="" class="img-fluid">
+               <h3>Languages</h3>
+               <ul>
+                 <li><i class="fa fa-plus fab"></i> Spanish(Native)</li>
+                 <li><i class="fa fa-plus fab"></i> Dutch(Advanced)</li>
+                 <li><i class="fa fa-plus fab"></i> English(Average)</li>
+               </ul>
              </div>
-        </div>   
-    </div><!--end clientes-->
-   
-<div class="container text-center mb-3 line"><!--skills-->
-  <img src="img/skills.png" alt="" class="img-fluid imagen"> 
-</div>
-    <div class="container" id="skills"> 
-       <div class="row">
-          <div class="col-md-4">
-            <h3>Front End</h3>
-            <ul>
-              <li><i class="fa fa-plus fab"></i> Bootstrap</li>
-              <li><i class="fa fa-plus fab"></i> WordPress</li>
-              <li><i class="fa fa-plus fab"></i> JavaScript</li>
-              <li><i class="fa fa-plus fab"></i> jQuery</li>
-              <li><i class="fa fa-plus fab"></i> SCSS</li>
-              <li><i class="fa fa-plus fab"></i> HTML5</li>
-              <li><i class="fa fa-plus fab"></i> ES6</li>
-              <li><i class="fa fa-plus fab"></i> CSS3</li>              
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h3>Back End</h3>
-            <ul>
-              <li><i class="fa fa-plus fab"></i> Laravel</li>
-              <li><i class="fa fa-plus fab"></i> Mysqli</li>
-              <li><i class="fa fa-plus fab"></i> PhpAdmin</li>
-              <li><i class="fa fa-plus fab"></i> PHP</li>
-              <li><i class="fa fa-plus fab"></i> SQL</li>
-              <li><i class="fa fa-plus fab"></i> Mysql</li>
-            </ul>
-           </div>
-           <div class="col-md-4">
-             <h3>Languages</h3>
-             <ul>
-               <li><i class="fa fa-plus fab"></i> Spanish(Native)</li>
-               <li><i class="fa fa-plus fab"></i> Dutch(Advanced)</li>
-               <li><i class="fa fa-plus fab"></i> English(Average)</li>
-             </ul>
-           </div>
-      </div>
-  </div><!--end skills-->
-    
+        </div>
+    </div><!--end skills-->
+ </section>  
+
+ <section>
   <div class="container text-center line"><!--contact-->
     <img src="img/contact.png" alt="" class="img-fluid imagen">
   </div>    
   <div class="container">
     <div class="row">
-      <div class="col-md-6 cont">
+      <div class="col-md-4 cont">
         <h2>CONTACT ME DIRECTLY</h2>
         <p><i class="fas fa-map-marker-alt"></i> Eindhoven</p>  
         <p><i class="fas fa-phone-alt"></i> Telephone: +31-649-729603</p>
          <p><i class="fas fa-at"></i> Email: isaryaime19@gmail.com</p>
-        </div>       
-      <div class="col-md-6 text-center follow">
+      </div> 
+        <div class="col-md-4">
+          <img src="img/isaTw.png" alt="" class="img-fluid">
+        </div>      
+      <div class="col-md-4 text-center follow">
         <h2>FOLLOW ME</h2>
-        <a class="nav-link" href="https://github.com/isaryaime19" tabindex="-1"><i class="fab fa-github-square fa-4x"></i></a>
-              <a class="nav-link" href="https://www.freecodecamp.org/isaryaime" tabindex="-1"><i class="fab fa-free-code-camp fa-4x"></i></a>               
-              <a class="nav-link" href="https://www.linkedin.com/in/isary-taveras-2a0a0ba9/" tabindex="-1"><i class="fab fa-linkedin fa-4x"></i></a>    
+        <a class="nav-link" href="https://github.com/isaryaime19" tabindex="-1"><i class="fab fa-github-square fa-3x"></i></a>
+              <a class="nav-link" href="https://www.freecodecamp.org/isaryaime" tabindex="-1"><i class="fab fa-free-code-camp fa-3x"></i></a>               
+              <a class="nav-link" href="https://www.linkedin.com/in/isary-taveras-2a0a0ba9/" tabindex="-1"><i class="fab fa-linkedin fa-3x"></i></a>    
       </div>
     </div>
   </div><!--end contact--> 
+ </section>
+    
+
     <!--footer-->
+      <div class="elfsight-app-a8580b61-68dc-43d9-9f02-ee6f5e25e0cb"></div>
+
       <footer style="margin-top: 30px; background-color: black; padding: 10px; color: white;">
-        <p>©2020 Isary Taveras</p>
+        <p>©2020 isaTweb Webdesign</p>
       </footer>
-      
+
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>     
       <script>
         $(document).ready(function(){
           // Initialize Tooltip

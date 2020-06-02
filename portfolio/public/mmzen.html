@@ -1,196 +1,402 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
-    <title>MMZen</title>
-    <style>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+            rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <title>MMZen</title>
+        <style>
+            body {
+                background: url("img/body-mmzen.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            /*texto animado*/
+            
 
-.portada{
-  background: url("https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")no-repeat fixed top;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 80vh;  
-}
-/*text*/
-h2{
-    font-family: 'Tangerine', cursive;
-    font-size: 60px;
-    color: fuchsia;
-}
-h4{
-    font-family: 'Tangerine', cursive;
-    font-size: 40px;
-    color: fuchsia;
-}
-span{
-    font-family: 'Tangerine', cursive;
-    font-size: 20px;
-}
-/*footer*/
-footer li{
-    text-decoration: none;
-    color:black;
-    font-size: 35px;
-    font-family: 'Tangerine', cursive;    
-}
-footer{ color:black;}
+            header {
+                background: url("img/port-mmzen.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+                height: 500px;
+            }
 
+            nav a {
+                font-family: 'Tangerine', cursive;
+                font-size: 40px;
+            }
+            /*text*/
+            h2 {
+                font-family: 'Tangerine', cursive;
+                font-size: 60px;
+                color: fuchsia;
+            }
+            h4 {
+                font-family: 'Tangerine', cursive;
+                font-size: 40px;
+                color: fuchsia;
+            }
+            span {
+                font-family: 'Tangerine', cursive;
+                font-size: 20px;
+            }
+            /*footer*/
+            footer li {
+                text-decoration: none;
+                color: black;
+                font-size: 35px;
+                font-family: 'Tangerine', cursive;
+            }
+            footer {
+                color: black;
+            }
 
-/*media query*/
+            /*media query*/
 
-@media screen and (max-width: 700px){
-    nav a{ font-size: 30px;}  
-    .portada{height: 50vh; width:auto} 
-    .bb h1{visibility: hidden;}
-   .bb h2{font-size: 20px; margin-top:-150px;}
-    .bb{ margin-top:0px;}  
-    .lead{font-size: 20px;}      
-}
+            @media screen and (max-width: 700px) {
 
-.logo{
-    width: 200px;    
-}
+                .bb h2 {
+                    font-size: 20px;
+                }
+                .bb {
+                    margin-top: 0;
+                }
+                .lead {
+                    font-size: 20px;
+                }
+            }
 
-nav a{  
-  font-size: 40px;
-  color: fuchsia;
-  font-family: 'Tangerine', cursive;
-}
+            .logo {
+                width: 200px;
+            }
 
-.lg{
-  display: inline;
-}
-.bb{
-  position: relative;
-  color:fuchsia;
-  text-align: center;
-  font-family: 'Tangerine', cursive;
-  margin-top: -250px;  
-}
-.bb h1{font-size: 80px;}
-.bb h2{font-size: 30px;}
+            .btn {
+                font-size: 25px;
+                width: 150px;
+                font-family: 'Tangerine', cursive;
+            }
 
+            .lg {
+                display: inline;
+            }
+            .bb {
+                position: relative;
+                color: black;
+                text-align: center;
+                font-family: 'Tangerine', cursive;
 
-</style>
-  </head>
-  <body> 
-    <div class="container-fluid portada">
-      <div class="container" id="menu"><!--navbar-->
-        <nav class="navbar navbar-light navbar-expand-lg">        
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <img src="img/mmz.png" alt="" class="logo">  
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#menu">Inicio<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Servicios">Servicios</a>
-              </li>                               
-              <li class="nav-item">
-                <a class="nav-link" href="#Nosotros">Nosotros</a>
-              </li>                           
-              <li class="nav-item">
-                <a class="nav-link" href="#Contacto">Contacto</a>
-              </li>       
-            </ul> 
-          </div>
-        </nav>                               
-      </div>
-    </div><!--end navbar-->
-    <div class="bb">
-      <h1>"Lorem ipsum dolor sit amet consectetur".</h1>
-      <a href="#Contacto"><h2 class="btn btn-outline-dark">Contáctanos</h2></a>
-    </div>  
-   
- 
-<div class="container  text-center my-5 presentacion p-5"><!--presentacion-->
-       <p class="lead">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias rem quas facilis ab hic error? Quaerat facilis iusto eius eligendi!".</p>
-       <h4>-MMZen-</h4>
-</div><!--end presentacion-->
-    
-   <div class="container p-3 text-center" id="Servicios"><!--servicios-->
-       <h2>Servicios</h2>
-       <hr>
-       <div class="row text-center">
-           <div class="col-md-4">
-              <img src="https://images.pexels.com/photos/261055/pexels-photo-261055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-fluid">
-               <h4>Masajes</h4>
-              <p class="lead  p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatem molestiae eius assumenda a deleniti.          
-               </p>
-           </div>
-            <div class="col-md-4">
-                <img src="https://images.pexels.com/photos/161737/pedicure-massage-therapist-spa-161737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="img-fluid">
-                <h4>Pedicura</h4>
-                <p class="lead  p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatem molestiae eius assumenda a deleniti.          
-                </p>
-            </div>
-            <div class="col-md-4 p-3">
-                <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-fluid">
-                <h4>Rostro</h4>
-                <p class="lead p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatem molestiae eius assumenda a deleniti.          
-                </p>
-            </div>
-       </div>
-   </div><!--end servicios-->
-   <div class="container">
-     <img src="https://images.pexels.com/photos/161599/scent-sticks-fragrance-aromatic-161599.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="img-fluid">
-   </div>
+            }
+            .bb h1 {
+                font-size: 80px;
+            }
+            .bb h2 {
+                font-size: 30px;
+            }
 
-   <div class="container p-5 text-center" id="Nosotros"><!--nosotros-->
-    <h2>Nosotros</h2>
-    <hr>  
-      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde sunt distinctio amet praesentium voluptas, alias, aperiam sequi harum nemo, et laborum! Perspiciatis inventore deserunt nihil maiores, quidem cum voluptate id amet. Autem quos in expedita cum molestiae, rem eligendi?</p>
-    </div><!--end nosotros-->
-   <div class="container">
-     <img src="https://images.pexels.com/photos/3816205/pexels-photo-3816205.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="img-fluid">
-   </div>
-   <div class="container p-3 text-center" id="Contacto"><!--contacto-->
-    <h2>Contacto</h2>
-    <hr>
-   </div>
-   
-    <footer>
-         <div class="container-fluid text-center p-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <p> <i class="fas fa-map-marker-alt"></i> Santo Domingo</p>  
-                    <p><i class="fas fa-phone-alt"></i> Telephone: +1800-00-00</p>
-                     <p><i class="fas fa-at"></i> Email: info@julianbeltran.com</p>
-                   <div class="social"> 
-                      <a><i class="fab fa-facebook fa-2x"></i></a>
-                      <a><i class="fab fa-instagram-square fa-2x"></i></a>               
-                      <a><i class="fab fa-twitter-square fa-2x"></i></a>          
-                   </div>    
-                  </div>
-                  <div class="col-md-4 logo">
-                    <img src="img/mmz.png" alt="" class="img-fluid logo">
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: rgba(192, 0, 134, 0.781);
+                width: 100%;
+                height: 0;
+                transition: 0.5s esay;
+                overflow: hidden;
+            }
+
+            .overlay h2 {
+                color: #fff;
+                font-size: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+            }
+            .imagen {
+                position: relative;
+            }
+            .imagen:hover .overlay {
+                height: 100%;
+                cursor: pointer;
+            }
+            .ml6 span{
+                position: relative;
+                font-weight: 900;
+                font-size: 70px;
+                }
+
+                .ml6 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+                }
+
+                .ml6 .letter {
+                display: inline-block;
+                line-height: 1em;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid portada">
+                <div class="container" id="menu">
+                    <!--navbar-->
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <img src="img/mmz.png" alt="" class="logo">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#menu">Inicio<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Servicios">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Nosotros">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#Contacto">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-              <div class="col-md-4">
-                  <ul class="nav flex-column">
-                    <a href="" ><li class="navbar-item">Inicio</li></a>
-                      <a href="" ><li class="navbar-item">Nosotros</li></a>
-                      <a href=""><li class="navbar-item">Servicios</li></a>
-                     </ul>
-              </div>
-              
-              
+            </div>
+            <!--end navbar-->
+            <div class="bb">
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                      <span class="letters">Time for Relax!!</span>
+                    </span>
+                  </h1>
+                <a href="#Contacto">
+                    <h2 class="btn btn-outline-dark">Contáctanos</h2>
+                </a>
+            </div>
+        </header>
+      <main>
+        <section>
+          <div class="container  text-center presentacion pt-5">
+            <!--presentacion-->
+            <p class="lead">"Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestias rem quas facilis ab hic error? Quaerat facilis iusto eius eligendi!".</p>
+            <h4>-MMZen-</h4>
+        </div>
+        <!--end presentacion-->
+
+        <div class="container p-3 text-center" id="Servicios">
+            <!--servicios-->
+            <h2>Servicios</h2>
+            <hr>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="imagen">
+                        <img
+                            src="https://images.pexels.com/photos/261055/pexels-photo-261055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt=""
+                            class="img-fluid">
+                        <div class="overlay">
+                            <a href="#">
+                                <h2>Reservar</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Masajes</h4>
+                        <p class="lead  p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi voluptatem molestiae eius assumenda a deleniti.
+                        </p>
+                        <a href="#Contacto" class="btn btn-outline-dark btn-sm">Reservar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="imagen">
+                        <img
+                            src="https://images.pexels.com/photos/161737/pedicure-massage-therapist-spa-161737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt=""
+                            class="img-fluid">
+                        <div class="overlay">
+                            <a href="#">
+                                <h2>Reservar</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Pedicura</h4>
+                        <p class="lead  p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi voluptatem molestiae eius assumenda a deleniti.
+                        </p>
+                        <a href="#Contacto" class="btn btn-outline-dark btn-sm">Reservar</a>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="imagen">
+                        <img
+                            src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt=""
+                            class="img-fluid">
+                        <div class="overlay">
+                            <a href="#">
+                                <h2>Reservar</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Rostro</h4>
+                        <p class="lead p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi voluptatem molestiae eius assumenda a deleniti.
+                        </p>
+                        <a href="#Contacto" class="btn btn-outline-dark btn-sm">Reservar</a>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+        <!--end servicios-->
+        </section>
+      </main>
+       
+      <section><!--nosotros-->
+        <div class="container">
+          <img
+              src="https://images.pexels.com/photos/161599/scent-sticks-fragrance-aromatic-161599.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              alt=""
+              class="img-fluid">
+      </div>
+
+      <div class="container p-5 text-center" id="Nosotros">
+          <!--nosotros-->
+          <h2>Nosotros</h2>
+          <hr>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nesciunt unde sunt distinctio amet praesentium voluptas, alias, aperiam sequi
+              harum nemo, et laborum! Perspiciatis inventore deserunt nihil maiores, quidem
+              cum voluptate id amet. Autem quos in expedita cum molestiae, rem eligendi?</p>
+      </div>
+    
+      <div class="container">
+          <img
+              src="https://images.pexels.com/photos/3816205/pexels-photo-3816205.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+              alt=""
+              class="img-fluid">
+      </div>  <!--end nosotros-->
+      </section>
+
+     <!--footer-->       
+        <div class="container p-3 text-center" id="Contacto">
+            <!--contacto-->
+            <h2>Contacto</h2>
+            <hr>
+        </div>
+
+        <footer>
+            <div class="container-fluid text-center p-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Santo Domingo</p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i>
+                            Telephone: +1800-00-00</p>
+                        <p>
+                            <i class="fas fa-at"></i>
+                            Email: info@mmzen.com</p>
+                        <div class="social">
+                            <a>
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-instagram-square fa-2x"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 logo">
+                        <img src="img/mmz.png" alt="" class="img-fluid logo">
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="nav flex-column">
+                            <a href="">
+                                <li class="navbar-item">Inicio</li>
+                            </a>
+                            <a href="">
+                                <li class="navbar-item">Nosotros</li>
+                            </a>
+                            <a href="">
+                                <li class="navbar-item">Servicios</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script>
+          // Wrap every letter in a span
+            var textWrapper = document.querySelector('.ml6 .letters');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.ml6 .letter',
+                translateY: ["1.1em", 0],
+                translateZ: 0,
+                duration: 750,
+                delay: (el, i) => 50 * i
+            }).add({
+                targets: '.ml6',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </body>
 </html>

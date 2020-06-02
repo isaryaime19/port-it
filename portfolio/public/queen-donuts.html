@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+    <title>Queen Donuts</title>
+    <style>
+         *{
+    margin: 0px;
+    padding: 0px;
+    }
+:root{
+    --ff-primary: 'Montserrat Alternates', sans-serif;
+    --ff-secundary: 'Lobster', cursive;
+    --ff--base:'Orbitron', sans-serif;
+    --bg--primary:#ffcc99;
+    --bg--secundary:white;
+    --fc--primary:white;
+    --fc-seundary: black;
+    --fs-title:60px;
+    --fs--subtitle:30px;
+}
+body{background: var(--bg--secundary);}
+
+h1, h2{
+    font-family: var(--ff-secundary);
+}
+
+hr{border: 1px solid fuchsia;}
+header{
+    width: 100%;
+    height: 450px;
+   background: url("img/portada-q.jpg") no-repeat fixed top;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    text-align: right;
+    color:var(--fc--secundary);
+}
+.wave{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+    
+li{
+    font-size:30px;
+    font-weight: 600;
+    color: var(--fc-seundary);
+    font-family: var(--ff-secundary);
+}
+
+a{color: var(--fc-seundary);}
+
+.logo{width: 150px;}
+
+/*.title{background-color: rgba(14, 15, 14, 0.548); padding-bottom: 10px; width: 600px;margin: auto;}*/
+.title{padding-right: 50px;}
+.title h1{
+    margin-top: 50px;
+    font-size: var(--fs-title);
+    font-family:var(--ff-secundary);    
+}
+.list img{width: 250px;}
+.list i{
+    color: fuchsia;
+} 
+
+.list p{
+    font-size: 20px;
+}
+  
+.btn{
+    width: 150px;
+    font-size: 20px;
+    font-family: var(--ff-secundary);
+}
+
+#socialfixed{
+    position:fixed;
+    top:60%;
+    width: 70px;
+    height: 180px;
+    background-color:rgba(236, 56, 212, 0.548);
+    z-index: 100;
+    padding-top: 15px;
+    padding-left: 10px;
+    }
+.donuts{
+    width: 100%;
+    height: 450px;
+    background: url("img/cup-str.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:var(--fc--secundary);   
+}  
+
+.donuts2 p{
+    font-size: 20px;
+}
+.donuts2 i{
+    color: fuchsia;
+   }
+
+.contacto{
+    background-color: var(--bg--secundary);
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    color:var(--fc--primary);
+    text-align: center;
+    padding: 10px;
+    background-color: #3366cc;
+   }
+
+@media screen and (max-width:542px){
+    .wave{margin-top: 150px;} 
+    .title{padding-right: 100px;} 
+    .ml13 span{ font-size: 30px;}
+}
+.ml13{
+  font-size: 0.5em;
+ /* letter-spacing: 0.3em;*/
+   font-weight: 300;
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.cake img:hover{
+    transform: rotate(25deg);
+}
+    </style>
+   
+  </head>
+  <body>
+   <header>
+       <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+         <img src="img/logo-q.png" alt="" class="logo img-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tips">Tips</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+       </div>
+       <div class="title">
+           <h1 class="ml13">Special for You!!</h1>
+        </div>
+       <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,0L60,5.3C120,11,240,21,360,48C480,75,600,117,720,144C840,171,960,181,1080,165.3C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+       </div>   
+    </header>
+    <div id="socialfixed">
+        <a href="" class="social2">
+            <div>
+                <i class="fab fa-facebook fa-3x"></i>
+            </div>
+        </a>
+        <a href="" class="social2">
+            <div>
+                <i class="fab fa-instagram-square fa-3x"></i>
+            </div>
+        </a>
+        <a href="" class="social2">
+            <div>
+                <i class="fab fa-twitter-square fa-3x"></i>
+            </div>
+        </a>
+    </div>
+    <main>
+        <section>
+            <div class="container presentacion">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/cake-1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 list text-center">
+                        <h2>Why us?</h2>
+                        <div><img src="img/line.png" alt="" class="img-fluid"></div>                        
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section>
+     <div class="container products">
+         <div class="row">
+             <div class="col-md-4 text-center">
+                 <h2>The best ingredients</h2>
+                 <div><img src="img/line.png" alt="" class="img-fluid"></div> 
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem perspiciatis nulla dolor repudiandae ratione reprehenderit alias, aliquid neque et non sed, provident corrupti officiis minus blanditiis numquam nesciunt totam?</p>
+             </div>
+             <div class="col-md-4 cake">
+                 <img src="img/cake-2.png" alt="" class="img-fluid">
+             </div>
+             <div class="col-md-4 text-center">
+                 <h2>From our heart</h2>
+                 <div><img src="img/line.png" alt="" class="img-fluid"></div> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem perspiciatis nulla dolor repudiandae ratione reprehenderit alias, aliquid neque et non sed, provident corrupti officiis minus blanditiis numquam nesciunt totam?</p>
+            </div>
+         </div>
+     </div>
+    </section>
+    <section>
+        <div class="container-fluid donuts p-5">
+            <div class="container row">
+                <div class="col-md-6 text-center donuts2">
+                        <h2>Products</h2>
+                        <div><img src="img/line.png" alt="" class="img-fluid"></div> 
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor.</p>
+                        <p><i class="fas fa-crown"></i> Lorem ipsum dolor.</p>
+                        <a href="contact" type=" button" class="btn btn-outline-primary">Order now</a>
+                </div>
+            </div>              
+        </div>
+    </section>
+
+    <section>
+        <div class="container more">
+            <div class="row text-center">
+                <div class="col-md-4 pt-5">
+                    <img src="img/d-choco.png" alt="" class="img-fluid">
+                    <a href="contact" type=" button" class="btn btn-outline-primary">Order now</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/join.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4 pt-5">
+                    <img src="img/d-fre.png" alt="" class="img-fluid">
+                    <a href="contact" type=" button" class="btn btn-outline-primary">Order now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 contacto">
+                <img src="img/choco-cup.jpg" alt="" class="img-fluid">
+            </div>    
+     
+          <div class="col-md-6 text-center pt-2 contacto">
+                <h2 class="titles">Contact Us:</h2>
+                <div><img src="img/line.png" alt="" class="img-fluid"></div> 
+                <h5><i class="fas fa-map-marker-alt"></i> Eindhoven</h5>  
+                <h5><i class="fas fa-phone-alt"></i> Telephone: +1800-000-000</h5>
+               <h5><i class="fas fa-at"></i> Email: info@makeupblog.com</h5>
+                <div> 
+                <a><i class="fab fa-facebook fa-4x"></i></a>
+                <a><i class="fab fa-instagram-square fa-4x"></i></a>               
+                <a><i class="fab fa-twitter-square fa-4x"></i></a>          
+                </div>   
+                <div>
+                <img src="img/logo-q.png" alt="" class="img-fluid">
+                </div> 
+            </div>
+        </div>             
+    </div>
+  </section>
+
+  <footer>
+      <p>&copy; 2020 isaTweb Webdesign</p> 
+</footer>     
+<script>
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml13 .letter',
+    translateY: [100,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 300 + 30 * i
+  }).add({
+    targets: '.ml13 .letter',
+    translateY: [0,-100],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1200,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script> 
+  
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+ 
+
+</html>

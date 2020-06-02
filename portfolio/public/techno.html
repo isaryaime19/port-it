@@ -5,13 +5,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Mega Menu</title>
+    <title>TECHNOLOGY MAGAZINE</title>
     <style>
  
-body {margin:0; }
+body {margin:0; 
+       background:url("img/port.jpg");
+       background-size: cover;
+       background-attachment: fixed;
+        }
+
+/*LETRAS ANIMADAS*/
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.5em;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}        
+        
 /*Header and navbar*/
   
 #main-doc {
@@ -34,40 +55,39 @@ body {margin:0; }
  #navbar {
    list-style-type: none;
    margin: 0;
-   padding-top: 50px;
-   overflow: hidden;
+    overflow: hidden;
    background-color: #333;
    position: fixed;
    top: 0;
    width: 25%;
    float: left;
-height: 100vh;
+
 } 
  code { 
     font-family: monospace;
     font-size: 20px;
   }
 
- .header1{
+ header{
   background: url("https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
   background-size: cover;
-  color:white;
-  padding-top: 100px;
+   padding-top: 230px;
   text-align: center;
-  font-size: 30px;  
-  height: 60vh; 
+   
+  height: 500px; 
    
  }
+
   .block1{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: teal;
+    background-color: black;
   }
   .block1 i, h1{
     color:white;
   }
 
   .block2{
-    background-color: teal;
+    background-color: black;
   }
   #home{
      color:gray;
@@ -80,17 +100,17 @@ height: 100vh;
  
 /*media query*/
 @media screen and (max-width:700px){
-	.header1 p{font-size: 20px;}
+
   #navbar a{font-size: 15px;}
-	.header1{width:90%;}
+	/*.header1{width:90%;}
   .main-section{width: 100%;}
-  .etiqueta{visibility: hidden;} 
+  .etiqueta{visibility: hidden;} */
 }  
 
   /*media iconos*/
-.fa-facebook {color:teal;}
-.fa-instagram-square {color:teal;}
-.fa-twitter-square {color:teal;}
+.fa-facebook {color:black;}
+.fa-instagram-square {color:black;}
+.fa-twitter-square {color:black;}
 
 /*animation*/
 .tec:hover{
@@ -107,92 +127,91 @@ height: 100vh;
 .etiqueta{ 
   height: 100px; 
   padding: 5px; 
-  background-color:orange;
-  color:black;
+  background-color:black;
+  color:white;
   margin-top:-80px;
   position: relative;
   text-align: center;  
   }
   .mod{
-    background: url("https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
+    background: url("img/5.jpg") no-repeat;
   background-size: cover;
   }
+  
 </style>
 </head>
 <body>
-  <!--navbar-->
+  <header>
+      <!--navbar-->
 <div class="container-fluid fixed-top bg-light" id="menu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-             
-                <div class="dropdown">
-                    <button class="btn btn-secundary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown Button
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <div class="d-md-flex">
-                            <div class="mx-4">
-                                <h5>categoria 1</h5>
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-        
-                            <div class="mx-4">
-                                <h5>categoria 2</h5>
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-        
-                            <div class="mx-4">
-                                <h5>categoria 3</h5>
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+         
+            <div class="dropdown">
+                <button class="btn btn-secundary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More Information
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="d-md-flex">
+                        <div class="mx-4">
+                            <h5>categoria 1</h5>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                        
-                    </div>           
+    
+                        <div class="mx-4">
+                            <h5>categoria 2</h5>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+    
+                        <div class="mx-4">
+                            <h5>categoria 3</h5>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
                     
-                </div>            
-            </li>
-           </ul>                  
-            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-facebook fa-2x"></i></a>
-            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-instagram-square fa-2x"></i></a>               
-            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-twitter-square fa-2x"></i></a>          
-              
-        </div>
-      </nav>
-    </div> <!--end navbar--> 
-    <br>
-    <br>
-    <!---seccion 1-->
-    <div class="container-fluid header1 mt-2 text-center">
-        <!--<div>
-            <i class="fas fa-satellite fa-6x fa-spin"></i>
-        </div>-->
-        <h1 class="bg-dark">TECHNOLOGY MAGAZINE</h1>
-        
+                </div>           
+                
+            </div>            
+        </li>
+       </ul>                  
+        <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-facebook fa-2x"></i></a>
+        <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-instagram-square fa-2x"></i></a>               
+        <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-twitter-square fa-2x"></i></a>        
+          
     </div>
-    <br>
+  </nav>
+</div> <!--end navbar-->
+<h1 class="ml4">
+  <span class="letters letters-1">WELCOME</span>
+  <span class="letters letters-2">TO</span>
+  <span class="letters letters-3">TECHNOLOGY MAGAZINE</span>
+</h1> 
+  </header>   
+   
     <div class="container etiqueta pt-3">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum, consequuntur beatae perspiciatis possimus eveniet dolore. Fuga similique rerum, eius harum esse quam debitis molestiae enim unde vitae rem impedit.</p>
     </div>
-    <div class="container  pt-5"><!--block2-->
+   
+    <div class="container-fluid  pt-5 text-white"><!--block2-->
       <div class="row">
         <div class="col-md-6">
          <img src="https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" class="card-img-top img-fluid" alt="">
@@ -215,6 +234,31 @@ height: 100vh;
           </div>                 
          </div>
       </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img/5.jpg" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/5.jpg" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>    
+            <div class="col-md-4">
+              <img src="img/5.jpg" class="card-img-top img-fluid" alt=""> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam reprehenderit architecto.</p>
+            </div>    
+          </div>                 
+         </div>
+         <div class="col-md-6">
+          <img src="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top img-fluid" alt="..." >
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda id rerum ut modi exercitationem debitis nesciunt ad sunt quasi nihil! Quaerat porro repellendus labore iste? Asperiores blanditiis quae corporis veritatis!</p>
+          </div>
+         </div>
+      </div>
+     
     </div><!--end block2-->  
 
     <div class="container-fluid  p-5 block1 text-white"><!--block1-->
@@ -325,7 +369,7 @@ height: 100vh;
         <i class="fas fa-angle-up fa-4x"></i>
       </a><br><br>  
     </div> 
-<div class="container-fluid text-center text-white p-3" style="background-color:teal;">
+<div class="container-fluid text-center text-white p-3" style="background-color:black;">
   <div class="row"> 
     <div class="col-md-4">
       <h3 style="color: orange;">CHAPTERS</h3>
@@ -337,7 +381,7 @@ height: 100vh;
               <P> Lorem ipsum dolor</P>
         </div>   
         <div class="col-md-4 pt-5">
-          <i class="fas fa-trademark fa-10x" style="color: orange;"></i>
+          <i class="fas fa-trademark fa-10x" style="color: white;"></i>
         </div>   
      <div class="col-md-4 lead">
       <h1 style="color: orange;">CONTACT</h1>
@@ -355,7 +399,59 @@ height: 100vh;
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+  </script>
     <script>
       $(window).focus(function(){
         if($('#menu').offset().top > 20){
