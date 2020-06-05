@@ -1,0 +1,318 @@
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@500&family=Orbitron&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
+
+https://github.com/isaryaime19
+https://www.linkedin.com/in/isary-taveras-2a0a0ba9/
+https://www.freecodecamp.org/isaryaime
+
+font-family: 'Lobster', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Orbitron', sans-serif;
+
+
+DEFINICION DE VARIABLES-------------
+
+:root{
+    --ff-primary: 'Montserrat Alternates', sans-serif;
+    --ff-secundary: 'Lobster', cursive;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light:#ffff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 00.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media(max-width:800px){
+    :root{
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.25rem;
+    }
+}
+
+body{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6rem;
+}
+section{
+    padding: 5em 2em;
+}
+
+
+/*typografy*/
+
+strong{font-weight: var(--fw-bold);}
+
+h1, h2, h3{
+    line-height: 1.1;
+    margin: 0;
+}
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+ICONONOS SOCIAL MEDIA---------------------
+
+<i class="fab fa-github-square fa-5px" ></i>
+<i class="fab fa-free-code-camp fa-5px"></i>
+<i class="fab fa-linkedin fa-5px"></i>
+
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-whatsapp"></i>
+<i class="fab fa-snapchat-square"></i>
+
+cambiarlos de color:
+<style>
+    .fa-facebook {
+    color:gray;
+    }
+
+    .fa-instagram-square {
+        color:gray;
+    }
+    .fa-twitter-square {
+        color:gray;
+    }
+    </style>
+
+MENU DE NAVEGACION FIJO CON MEGAMENU----------------
+
+
+  <div class="container-fluid fixed-top bg-light" id="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+             
+                <div class="dropdown">
+                    <button class="btn btn-secundary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown Button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="d-md-flex">
+                            <div class="mx-4">
+                                <h5>categoria 1</h5>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+        
+                            <div class="mx-4">
+                                <h5>categoria 2</h5>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+        
+                            <div class="mx-4">
+                                <h5>categoria 3</h5>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                        
+                    </div>           
+                    
+                </div>            
+            </li>
+           </ul>                  
+            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-facebook fa-2x"></i></a>
+            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-instagram-square fa-2x"></i></a>               
+            <a class="nav-link" href="#" tabindex="-1"><i class="fab fa-twitter-square fa-2x"></i></a>          
+              
+        </div>
+      </nav>
+    </div>
+    <br>
+    <br>
+    <!---seccion 1-->
+    <div class="container-fluid mt-2 p-md-5 text-white text-center lead" style="background-color: midnightblue;">
+        <div>
+            <i class="fas fa-satellite fa-6x fa-spin"></i>
+        </div>
+        <p class="display-4" style="text-decoration: underline;">TECHNOLOGY MAGAZINE</p>
+        <span>Technology Lovers</span>
+    </div>
+IMAGENES CON RGBA----------------
+
+.overlay{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,118,192, 0.781);
+	width: 100%;
+	height: 0;
+	transition: .5s esay;
+	overflow: hidden;
+}
+
+.overlay h2{
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+	height: 100%;
+	cursor: pointer;
+}
+
+MEDIAS QUERY-----------------------
+
+@media screen and (max-width:1000px){
+	.contenedor-imagenes{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.contenedor-imagenes{
+		width: 90%;
+	}
+   .contenedor-imagenes .imagen{
+   	  width: 48%;
+   }
+}
+
+@media screen and (max-width:450px){
+	h1{
+		font-size: 22px;
+	}
+	.contenedor-imagenes{
+		width: 98%;
+	}
+   .contenedor-imagenes .imagen{
+   	  width: 80%
+   }
+}
+
+FOOTER-----------
+<footer>
+  <div class="text-center">
+      <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+        <i class="fas fa-angle-up fa-4x"></i>
+      </a><br><br>  
+    </div> 
+ <div class="container-fluid text-center text-white p-5" style="background-color: midnightblue;">
+  
+    <div class="row"> 
+     <div class="col-md-6">
+      <i class="fas fa-atom fa-7x fa-spin"></i>
+    </div>
+
+     <div class="col-md-6 lead">
+      <p> <i class="fas fa-map-marker-alt"></i> Noord Brabant</p>  
+      <p><i class="fas fa-phone-alt"></i> Telephone: +1800-00-00</p>
+       <p><i class="fas fa-at"></i> Email: info@technology.com</p>
+      </div>       
+       
+    </div>   
+ 
+</div>
+</footer>
+
+SECCION DE PROYECTOS---------------------
+
+<div class="container mt-5">
+      <div class="row">
+         <div class="col-12 col-sm-6 col-md-4 mt-5" >
+          <div class="card">
+            <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Ejercicios</h5>
+              <p class="card-text">Como expertos en ofrecer tratamiento alternativo para el Parkinson, vamos a hablarle de la importancia de realizar una serie de ejercicios para Parkinson. Y es que es muy importante en este tipo de enfermedades realizar estos ejercicios de movilidad.</p>
+              <a href="" class="btn btn-primary" >Leer mas...</a>
+            </div>            
+          </div>
+         </div>
+
+         <div class="col-12 col-sm-6 col-md-4 mt-5"> <!--dopa-->
+          <div class="card">
+                <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">Alimentacion</h5>
+                <p class="card-text">Hay que tener en cuenta en los pacientes con la enfermedad de Parkinson que toman levodopa que los aminoácidos neutros y la levodopa compiten en su absorción a nivel del intestino delgado y barrera hematoencefálica.</p>
+                <a href="" class="btn btn-primary" >Leer mas..</a>
+              </div>
+          </div><!--dopa-->
+          
+         </div>  
+                
+          <div class="col-12 col-sm-12 col-md-4 mt-5">
+            <div class="card">
+              <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top img-fluid" alt="..." >
+              <div class="card-body">
+                <h5 class="card-title">La Respiración</h5>
+                <p class="card-text">Además de permitir una buena oxigenación y una buena fonación, la respiración puede ser una técnica muy eficaz para relajarse. Estas técnicas tienen un efecto muy comprobante sobre las personas con la enfermedad de Parkinson. La respiración relajante puede estar utilizando en varios casos; por ejemplo:</p>
+                <a href="" class="btn btn-primary">Leer mas...</a>
+              </div>              
+            </div>
+          </div>
+        </div> 
+    </div>    
+    
+     <!--modal-->   
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--modal-->
+Knowing is not enough; we must apply. Wishing is not enough; we must do.
+Johann Wolfgang von Goethe

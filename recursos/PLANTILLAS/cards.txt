@@ -1,0 +1,38 @@
+<div class="container mt-5">
+      <div class="row">
+         <div class="col-12 col-md-4 mt-md-5" >
+          <div class="card">
+            <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top" alt="..." style="width:auto;">
+            <div class="card-body">
+              <h5 class="card-title">Ejercicios</h5>
+              <p class="card-text">Como expertos en ofrecer tratamiento alternativo para el Parkinson, vamos a hablarle de la importancia de realizar una serie de ejercicios para Parkinson. Y es que es muy importante en este tipo de enfermedades realizar estos ejercicios de movilidad.</p>
+              <a href=https://www.parkinsonysalud.com/ejercicios-para-parkinson/ class="btn" style="color:white; background-color: blueviolet;">Leer mas...</a>
+            </div>            
+          </div>
+         </div>
+
+         <div class="col-12 col-md-4 mt-5 mt-md-5"> <!--dopa-->
+          <div class="card">
+                <img src="https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top" alt="..." style="width:auto;">
+              <div class="card-body">
+                <h5 class="card-title">Alimentacion</h5>
+                <p class="card-text">Hay que tener en cuenta en los pacientes con la enfermedad de Parkinson que toman levodopa que los aminoácidos neutros y la levodopa compiten en su absorción a nivel del intestino delgado y barrera hematoencefálica.</p>
+                <a href="https://portal.unidoscontraelparkinson.com/tratamientos-parkinson/1608-dieta-recomendada-para-pacientes-en-tratamiento-con-levodopa.html" class="btn" style="color:white; background-color: blueviolet;" >Leer mas..</a>
+              </div>
+          </div><!--dopa-->
+          
+         </div>  
+                
+          <div class="col-12 col-md-4 mt-5 mt-md-5">
+            <div class="card">
+              <img src=""https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/4df33b3b-e16c-4fbf-82c3-9a991ccb0022" class="card-img-top" alt="..." style="width:auto;">
+              <div class="card-body">
+                <h5 class="card-title">La Respiración</h5>
+                <p class="card-text">Además de permitir una buena oxigenación y una buena fonación, la respiración puede ser una técnica muy eficaz para relajarse. Estas técnicas tienen un efecto muy comprobante sobre las personas con la enfermedad de Parkinson. La respiración relajante puede estar utilizando en varios casos; por ejemplo:</p>
+                <a href="http://etica-parkinson.over-blog.com/2015/12/la-respiracion-como-medio-de-relajacion-en-un-paciente-parkinson.html" class="btn btn-success">Leer mas...</a>
+              </div>              
+            </div>
+          </div>
+        </div> 
+      </div>    
+

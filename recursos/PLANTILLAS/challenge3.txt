@@ -1,0 +1,118 @@
+<header id="header">
+  <nav class= "navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5px" id="nav-bar">
+    <ul class="navbar-nav m-auto">
+      <li><a href="#header" class="nav-link">Home</a></li>
+      <li><a href="#news" class="nav-link">News</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+    </ul>
+  </nav> 
+ </div> 
+ <div class="container mt-5"> 
+  <p>Sweet and Saltly</p>
+  <div>
+    <img src="https://image.freepik.com/vector-gratis/dulces-deliciosos_23-2147511804.jpg" alt="logo" id="header-img">
+  </div>
+</header>
+<br>
+<h1 class="text-center">News</h1>
+<div class="container mt-5" id="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.jjdonuts.nl/wp-content/uploads/2019/01/Mickey-Donut-box-JJ-Donuts.jpg" class="card-img-top img-fluid" alt="donuts">
+          <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div>        
+  </div>
+      
+  <div class="col-md-4">
+   <div class="card" style="width: 18rem;">
+  <img src="https://lactosefree.nl/wp-content/uploads/2019/03/Lactosevrij-brood-voorbeeld.jpg" class="card-img-top img-fluid" alt="donuts">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  </div>
+  </div>
+      
+  <div class="col-md-4">
+                 <div class="card" style="width: 18rem;">
+  <img src="https://mejorconsalud.com/wp-content/uploads/2015/04/torta-humeda-nutella-500x334.jpg" class="card-img-top img-fluid" alt="cake">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr> 
+ <h1 class="text-center" id="about">About Us</h1> 
+ <div class="container text-center" ">
+     <p style="font-size:30px;">loremipsum loremipsum loremipsum loremipsum loremipsum loremipsum.</p>                            
+ </div>
+<br>
+<div class="container text-center" >
+  <video width="400" height="300" controls id="video">
+  <source src="" type="video/mp4">  
+</video>
+</div>
+<br>
+<div class="container-grid text-center">
+  <div class="d1"><h3>Sweet</h3></div>
+  <div class="d2"><h3>Saltly</h3></div>
+  <div class="d3"><h3>Sweet</h3></div>
+  <div class="d4"><h3>Saltly</h3></div>
+  <div class="d5"><h3>Sweet</h3></div>
+  <div class="d1"><h3>Saltly</h3></div>                 
+</div>                           
+<br>
+<h1 style="text-align:center" id="contact">Contact</h1>
+
+header{
+  background-color: #F08080;
+  text-align: center;
+  padding: 30px;
+  font-size: 80px;
+}
+
+header img{
+  border-radius:50%;
+  width:250px;
+  }
+li{
+  font-size: 40px;  
+}
+
+ul{
+  margin-top: 0;
+}
+
+#div-form{
+  background-color: #F08080;
+  padding: 50px;
+}
+
+  .d1{background:LightSkyBlue; padding:30px;}
+  .d2{background:LightSalmon; padding:30px;}
+  .d3{background:PaleTurquoise; padding:30px;}
+  .d4{background:LightPink; padding:30px;}
+  .d5{background:PaleGreen; padding:30px;}
+.container-grid {
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  padding: 30px;  
+  }
+ 
