@@ -2,17 +2,26 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Webdesign and Webshops development in Eindhoven">
+    <meta name="description" content="Do you want a quickly, style full, SEO friendly Website, Webshop or blog? We make it for you, get in touch.">
+    <meta name="keywords"  content="website, webshop, WordPress, blog, wix, joomia, Web design, web developmet Web designer, Webdesign, web developmet Webdesigner, Eindhoven, Netherland, spaans">
+    <meta name="autor" content="isatWeb">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@500&family=Orbitron&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba1f2bfbe7.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
-    <title>Isary Taveras Web</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <meta property="og:title" content="isaTweb Webdesign">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://isatwebdesign.web.app/">
+   <meta property="og:image" content="https://isatwebdesign.web.app/img/isaTw.png">
+   <meta property="og:site_name" content="isaTweb Webdesign">
+   <meta property="og:description" content="We build you a quick, SEO friendly Websites and Webshops.">
+
+    <title>isatWeb Webdesign</title>
     <style>
       /*DEFINICION DE VARIABLES-------------*/
 
@@ -34,7 +43,11 @@
     --fs-body: 1rem;
     --bs:rgba(0,118,192, 0.781);
 }
-
+body{
+  background: url("img/black-line.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
 /*Navbar*/
 nav a{
     font-family: var(--ff--base);
@@ -46,13 +59,14 @@ nav a{
 .fas{ color:fuchsia;}
 /*PORTADA*/
 header{
-  background: url("img/port.jpg");
+  background: url("img/port-color.jpg");
   background-position: fixed top;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
   font-family: var(--ff--base);
-  height: 550px;
+  padding-top: 50px;
+  height: 500px;
   margin-top: 10px;      
 }
 .isatw{
@@ -112,23 +126,18 @@ img:hover{
 .presentation h1{font-family: var(--ff-primary);}
 
 /*work*/
-.work{
+/*.work{
   background: url("img/port.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+}*/
 .work h1{
     font-family: var(--ff-primary);
     text-align: center;    
 }
 
 
-
-.imagen{
-  width: 300px;
-  text-align: center;  
-}
 /*skills*/
 #skills h1{
     font-family: var(--ff-primary);
@@ -136,16 +145,7 @@ img:hover{
     padding: 5px;  
 }
 #skills li{list-style: none;}
-
-/*media query*/
-@media screen and (max-width:800px){
-  .portada{padding-top: 100px;}
-  .portada h1{font-size: 40px;}
-  .imagen{width:70%;} 
-  .cont h2{font-size: 30px;}
-  .presentation img{width: 150px; margin-top: 20px;}
-  }
-  .line{border-bottom: fuchsia solid 5px;}
+.line{border-bottom: fuchsia solid 5px;}
   .cont p{font-size: 20px;}
   .follow a{display:inline;}
 
@@ -176,6 +176,11 @@ img:hover{
   color: white;
   }
   
+  .card{
+    background-color:rgba(2, 2, 22, 0.548);
+    color: white;
+    margin-left: 10px;
+  }
   .pricing p{font-size: 20px;}
 
   span{
@@ -185,6 +190,20 @@ img:hover{
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+  .imagen{
+  width: 300px;
+  text-align: center;  
+}
+/*media query*/
+@media screen and (max-width:800px){
+  .portada{padding-top: 100px;}
+  .portada h1{font-size: 40px;}
+  .isatw img{width: 60%;}
+  .imagen{width:60%;} 
+  .cont h2{font-size: 30px;}
+  .presentation img{width: 150px; margin-top: 20px;}
+  }
+ 
   </style>
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -222,7 +241,7 @@ img:hover{
       <!---Portada-->
       <div class="container portada"> 
         <div class=" container isatw">
-          <img src="img/isat-logo.png" alt="Webdesigner Eindhoven" class="img-fluid">
+          <img src="img/isaTw.png" alt="Webdesigner Eindhoven" class="img-fluid imagen">
           <a class="btn btn-outline-light  btn-lg" href="#work">PORTFOLIO</a> 
         </div>              
       </div>
@@ -236,34 +255,35 @@ img:hover{
         </div>
         <div class="container presentation" id="me">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-5">
+              <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see.</p>
+            </div>
+            <div class="col-md-3 pt-3">
               <img src="img/isaa.jpg" alt="Webdesigner Eindhoven" class="img-fluid">
             </div>
-            <div class="col-md-9">
-              <p>"Front End Developer with a passion for design, my career started as a hobby and I have developed different skills over time and I have discovered that I am passionate about creating a virtual space where people feel comfortable and identified with what they see, ... I offer a platform friendly and that add value to the people."</p>
-            </div>
+            
           </div>     
         </div>
        </section>
 
         <!--Section 1-->
       <div class="container text-center mt-5 mb-3 line">
-        <img src="img/workt.png" alt="Webdesigner Eindhoven" class="img-fluide imagen">
+        <img src="img/workt.png"  alt="Webdesigner Eindhoven" class="img-fluide imagen">
       </div>
       <div class="container-fluid work text-center p-5" id="work">
         <div class="row">
           <div class="row">
             <div class="col-md-6 mt-5">
-             <a href="https://isaweb.web.app/"><img src="img/green.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a> 
+             <a href="https://isaweb.web.app/" target="_blank"><img src="img/green.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a> 
             </div>
             <div class="col-md-6 mt-5">
-              <a href="https://themplate1.web.app/"><img src="img/e&a.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a>
+              <a href="https://themplate1.web.app/" target="_blank"><img src="img/e&a.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a>
             </div>
           </div>
           
           <div class="row">
           <div class="col-md-6 mt-5">            
-              <a href="queen-donuts.html" target="_blank"> <img src="img/donuts.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                   
+              <a href="queen-donuts.html" target="_blank"><img src="img/donuts.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>                   
           </div>                   
           <div class="col-md-6 mt-5" >           
              <a href="http://milo.weavewigsbraids.com/" target="_blank"><img src="img/breakfast.jpg" class="img-fluid" alt="Webdesigner Eindhoven" ></a>              
@@ -300,7 +320,7 @@ img:hover{
 
           <div class="row">
             <div class="col-md-6 mt-5" >             
-                <a href="mmzen.html" target="_blank"><img src="img/mmzen.jpg" class="img-fluid" alt="Webdesigner Eindhoven"></a>                
+                <a href="mmzen.html" target="_blank"><img src="img/MmZen.png" class="img-fluid" alt="Webdesigner Eindhoven"></a>                
             </div>
             <div class="col-md-6 mt-5">
              <a href="https://template2a381f.web.app/"><img src="img/online-academy.jpg" alt="Webdesigner Eindhoven" class="img-fluid"></a>
@@ -311,15 +331,15 @@ img:hover{
    
 <section>
   <div class="container pt-5"><!--clientes-->
-    <div class="row">
+    <div class="row text-center">
         <div class="col-md-4">
-          <img src="img/LOGO.png" alt="" class="img-fluid">
+          <img src="img/LOGO.png" alt="" class="img-fluid imagen">
         </div>
         <div class="col-md-4">
-           <img src="img/logo-1.png" alt="" class="img-fluid">
+           <img src="img/logo-1.png" alt="" class="img-fluid imagen">
          </div>
          <div class="col-md-4">
-           <img src="img/mmz.png" alt="" class="img-fluid">
+           <img src="img/mmz.png" alt="" class="img-fluid imagen">
          </div>
     </div>   
 </div><!--end clientes-->
@@ -334,13 +354,14 @@ img:hover{
   </div>
   <div class="container pricing mt-3">      
      <div class="row">
-        <div class="col-md-4 card">
+        <div class="col-md-4 card ml-4">
         <h2>Basic <span>€100</span></h2>
         <p><i  class="fas fa-check"></i> 7 Days Delivery.</p>
         <p><i  class="fas fa-check"></i> 1 Page.</p>
         <p><i  class="fas fa-check"></i> 5 Sections(Presentation, Services, About, Gallery, Contact).</p>
-        <p><i  class="fas fa-check"></i> Responsive Design</p>
         <p><i  class="fas fa-check"></i> 2 Plugins(Animation Letters, WhatsApp).</p>
+        <p><i  class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> SEO Friendly</p>      
         <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
       </div>
       <div class="col-md-4 card">
@@ -348,48 +369,56 @@ img:hover{
         <p><i class="fas fa-check"></i> 10 Days Delivery.</p>
         <p><i  class="fas fa-check"></i> 5 Pages.</p>
         <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
-        <p><i class="fas fa-check"></i> Responsive Design</p>
         <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i class="fas fa-check"></i> Responsive Design</p>
+        <p><i  class="fas fa-check"></i> SEO Friendly</p>           
         <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
       </div>
-      <div class="col-md-4 card">
+      <div class="col-md-3 card">
         <h2>Extras</h2>
         <p><i  class="fas fa-check"></i> Logo €10</p>
-        <p><i  class="fas fa-check"></i> Domain €15 a year</p>
-        <p><i  class="fas fa-check"></i> Hosting €60 for 2 years</p>          
+        <p><i  class="fas fa-check"></i> Domain €15/year</p>
+        <p><i  class="fas fa-check"></i> Website in other Languages €50</p>
+        <p><i  class="fas fa-check"></i> Hosting €60/year</p> 
+        <p><i  class="fas fa-check"></i> SSL Certification €20/year</p>  
+        <p><i  class="fas fa-check"></i> Google Analytics €15</p>         
       </div>
     </div>
     <div class="container text-center line pt-5">
       <h1>Web<span>Shops</span></h1>
     </div>
-    <div class="row pt-5">
-      <div class="col-md-4 card">
-        <h2>Basic <span>€150</span></h2>
+    <div class="row pt-3">
+      <div class="col-md-4 card ml-4">
+        <h2>Basic <span>€200</span></h2>
         <p><i class="fas fa-check"></i> 15 Days Delivery.</p>
         <p><i  class="fas fa-check"></i> 10 Products.</p>
         <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
         <p><i class="fas fa-check"></i> Responsive Design</p>
         <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i  class="fas fa-check"></i> SEO Friendly</p>
         <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
       </div>
       <div class="col-md-4 card">
-      <h2>Standart <span>€250</span></h2>
+      <h2>Standart <span>€300</span></h2>
         <p><i class="fas fa-check"></i> 15 Days Delivery.</p>
         <p><i  class="fas fa-check"></i> 20 Products.</p>
         <p><i  class="fas fa-check"></i> 6 Sections(Presentation, Services, About, Gallery, Testimonials, Contact).</p>
         <p><i class="fas fa-check"></i> Responsive Design</p>
         <p><i  class="fas fa-check"></i> 4 Plugins(Animation Letters, WhatsApp, Newsletter form, Google maps).</p>
+        <p><i  class="fas fa-check"></i> SEO Friendly</p>
         <p><i  class="fas fa-check"></i> 2 Revisions.</p>        
       </div>
-      <div class="col-md-4 card">
+      <div class="col-md-3 card">
         <h2>Extras</h2>
         <p><i  class="fas fa-check"></i> Logo €10</p>
-        <p><i  class="fas fa-check"></i> Domain €15 a year</p>
-        <p><i  class="fas fa-check"></i> Hosting €60 for 2 years</p>          
+        <p><i  class="fas fa-check"></i> Domain €15/year</p>
+        <p><i  class="fas fa-check"></i> Hosting €60/year</p>
+        <p><i  class="fas fa-check"></i> Webshop in other Languages €80</p>
+        <p><i  class="fas fa-check"></i> SSL Certification €20/year</p> 
+        <p><i  class="fas fa-check"></i> Google Analytics</p>          
       </div>
       </div>
     </div>
-
   </div>
 </section>
  <section>
@@ -464,8 +493,8 @@ img:hover{
     <!--footer-->
       <div class="elfsight-app-a8580b61-68dc-43d9-9f02-ee6f5e25e0cb"></div>
 
-      <footer style="margin-top: 30px; background-color: black; padding: 10px; color: white;">
-        <p>©2020 isaTweb Webdesign</p>
+      <footer style="margin-top: 30px; background-color: black; padding: 10px; color: white;" class="text-center">
+        <p>Copyright ©2020 isaTweb Webdesign</p>
       </footer>
 
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>     
